@@ -16,8 +16,8 @@ export default function Home(){
                     <a href="mailto:artyom556@mail.ru" target="_blank"><i className="fas fa-envelope"></i></a>
                 </div>
                 <div className="info">
-                    <h2>Hi, my name is Artyom</h2>
-                    <h3>And I am a Frontend Developer</h3>
+                    <h2>Привет, я Алекс</h2>
+                    <h3>frontend developer</h3>
                     <p>I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.</p>
                     <a href="mailto:artyom556@mail.ru" className="btn" target="_blank">Contact Me <i className="fas fa-arrow-circle-right"></i></a>
                 </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import easterBreaker from "easter-break";
 
 export default function Nav(){
     return(
@@ -17,7 +18,7 @@ export default function Nav(){
 {/*   Header */} 
         <header>
             <div className="nav-bar">
-                <a href="#" className="logo">Artyom</a>
+                <a href="#" onClick={easterBreaker} className="logo">Саша</a>
                 <div className="navigation">
                     <div className="nav-items">
                         <div className="nav-close-btn"></div>

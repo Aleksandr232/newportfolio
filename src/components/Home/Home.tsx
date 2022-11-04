@@ -9,17 +9,17 @@ export default function Home(){
         <section className="home flex-center" id="home">
             <div className="home-container">
                 <div className="media-icons">
-                    <a href="https://github.com/ArtyomSamsonov" target="_blank"><i className="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/artsam556" target="_blank"><i className="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/89274401962" target="_blank"><i className="fab fa-whatsapp"></i></a>
-                    <a href="https://t.me/arty556" target="_blank"><i className="fab fa-telegram"></i></a>
-                    <a href="mailto:artyom556@mail.ru" target="_blank"><i className="fas fa-envelope"></i></a>
+                    <a href="https://github.com/ArtyomSamsonov" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/artsam556" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/89274401962" target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/arty556" target="_blank" rel="noreferrer"><i className="fab fa-telegram"></i></a>
+                    <a href="mailto:artyom556@mail.ru" target="_blank" rel="noreferrer"><i className="fas fa-envelope"></i></a>
                 </div>
                 <div className="info">
                     <h2>Привет, я Алекс</h2>
                     <h3>frontend developer</h3>
                     <p>I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.</p>
-                    <a href="mailto:artyom556@mail.ru" className="btn" target="_blank">Contact Me <i className="fas fa-arrow-circle-right"></i></a>
+                    <a href="mailto:artyom556@mail.ru" className="btn" target="_blank" rel="noreferrer">Contact Me <i className="fas fa-arrow-circle-right"></i></a>
                 </div>
                 <div className="home-img">
                     <div className="blob">

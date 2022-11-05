@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
 
 export default function Nav(){
@@ -22,12 +23,11 @@ export default function Nav(){
                 <div className="navigation">
                     <div className="nav-items">
                         <div className="nav-close-btn"></div>
-                        <a className="active" href="#home">Home</a>
-                        <a href="#about">About me</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#services">Services</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#contact">Contact</a>
+                        <Link className="active" to="/">Home</Link>
+                        <Link to="/about">About me</Link>
+                        <Link to="#skills">Skills</Link>
+                        <Link to="#portfolio">Portfolio</Link>
+                        <Link to="#contact">Contact</Link>
                     </div>
                 </div>
                 <div className="nav-menu-btn"></div>

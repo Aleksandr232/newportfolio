@@ -1,5 +1,6 @@
 import React from "react";
 
+import me from './img/mess.png'
 
 export default function Home(){
     
@@ -23,7 +24,7 @@ export default function Home(){
                 </div>
                 <div className="home-img">
                     <div className="blob">
-                        <img className="img-blob" src="./assets/img/portf-circle.png" alt=""/>
+                        <img className="img-blob" src={me} alt=""/>
                         <svg className="svg-blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <g>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">

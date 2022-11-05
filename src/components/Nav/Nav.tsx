@@ -25,8 +25,8 @@ export default function Nav(){
                         <div className="nav-close-btn"></div>
                         <Link className="active" to="/">Home</Link>
                         <Link to="/about">About me</Link>
-                        <Link to="#skills">Skills</Link>
-                        <Link to="#portfolio">Portfolio</Link>
+                        <Link to="/skills">Skills</Link>
+                        <Link to="/portfolio">Portfolio</Link>
                         <Link to="#contact">Contact</Link>
                     </div>
                 </div>

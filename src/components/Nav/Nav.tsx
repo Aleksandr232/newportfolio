@@ -1,8 +1,23 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
+import { useTheme } from "../../hooks/useTheme";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Nav(){
+    const {theme, setTheme} = useTheme()
+    const [num, setNum] = useState('1')
+
+    const ThemeClick=()=>{
+        setTheme('dark-theme')
+        setNum('2')
+    }
+
+    const LightClick=()=>{
+        setTheme('')
+        setNum('2')
+    }
+
     return(
        <>
 {/*  Scroll to top button  */}
@@ -12,8 +27,8 @@ export default function Nav(){
 
 {/* Light/Dark theme button  */}
         <div className="theme-btn flex-center">
-            <i className="fas fa-moon"></i>
-            <i className="fas fa-sun"></i>
+            <i onClick={ThemeClick} className="fas fa-moon">{num}</i>
+            <i onClick={LightClick} className="fas fa-sun">{num}</i>
         </div>
 
 {/*   Header */} 

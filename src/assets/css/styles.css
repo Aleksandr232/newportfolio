@@ -1182,7 +1182,7 @@ footer a {
     }
 
     .nav-menu-btn {
-      /*   background: url(../img/menu-btn.png)no-repeat; */
+        background: url(../icons/menu-btn.png)no-repeat;
         /* filter: var(--color-filter); */
         background-size: 30px;
         background-position: center;

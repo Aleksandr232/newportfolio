@@ -5,8 +5,8 @@ export default function Portfolio(){
     return(
                  <section className="portfolio section" id="portfolio">
             <div className="container flex-center">
-                <h1 className="section-title-01">Portfolio</h1>
-                <h2 className="section-title-02">Portfolio</h2>
+                <h1 className="section-title-01">Работы</h1>
+                <h2 className="section-title-02">Работы</h2>
                 <div className="content">
                     <div className="portfolio-list">
                         <div className="img-card-container">

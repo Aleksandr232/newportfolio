@@ -21,7 +21,7 @@ export default function Home(){
                     <h2>Привет, я Алекс</h2>
                     <h3>frontend developer</h3>
                     <p>I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.</p>
-                    <a href="mailto:artyom556@mail.ru" className="btn" target="_blank" rel="noreferrer">Contact Me <i className="fas fa-arrow-circle-right"></i></a>
+                    <a href="mailto:aleksrowing232@gmail.com" className="btn" target="_blank" rel="noreferrer">Свяжитесь со мной <i className="fas fa-arrow-circle-right"></i></a>
                 </div>
                 <div className="home-img">
                     <div className="blob">

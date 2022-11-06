@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
 import { useTheme } from "../../hooks/useTheme";
@@ -6,17 +6,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Nav(){
     const {theme, setTheme} = useTheme()
-    const [num, setNum] = useState('1')
+    
 
     const ThemeClick=()=>{
-        setTheme('dark-theme')
-        setNum('2')
+       theme === 'light' ? setTheme('dark-theme') : setTheme('light')   
     }
 
-    const LightClick=()=>{
-        setTheme('')
-        setNum('2')
-    }
+   
+    
+   
 
     return(
        <>
@@ -26,9 +24,9 @@ export default function Nav(){
         </div>
 
 {/* Light/Dark theme button  */}
-        <div className="theme-btn flex-center">
-            <i onClick={ThemeClick} className="fas fa-moon">{num}</i>
-            <i onClick={LightClick} className="fas fa-sun">{num}</i>
+        <div onClick={ThemeClick} className="theme-btn flex-center">
+            <i  className="fas fa-moon"></i>
+            <i className="fas fa-sun"></i>
         </div>
 
 {/*   Header */} 
@@ -38,11 +36,11 @@ export default function Nav(){
                 <div className="navigation">
                     <div className="nav-items">
                         <div className="nav-close-btn"></div>
-                        <Link className="active" to="/">Home</Link>
-                        <Link to="/about">About me</Link>
-                        <Link to="/skills">Skills</Link>
-                        <Link to="/portfolio">Portfolio</Link>
-                        <Link to="#contact">Contact</Link>
+                        <Link className="active" to="/">Главная</Link>
+                        <Link to="/about">Об мне</Link>
+                        <Link to="/skills">Навыки</Link>
+                        <Link to="/portfolio">Работы</Link>
+                        <Link to="#contact">Контакты</Link>
                     </div>
                 </div>
                 <div className="nav-menu-btn"></div>

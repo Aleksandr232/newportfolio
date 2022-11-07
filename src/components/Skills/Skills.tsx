@@ -56,7 +56,7 @@ export default function Skills(){
                             <div className="upper">
                                 <h3>Промышленный альпинист</h3>
                                 <h5>Заказы</h5>
-                                <span>2021 - </span>
+                                <span>2020 - </span>
                             </div>
                             <div className="hr"></div>
                             <h4><label>ИП Мельников Андрей "НА ВЫСОТЕ"</label></h4>
@@ -69,7 +69,7 @@ export default function Skills(){
                             <div className="upper">
                                 <h3>Промышленный альпинист</h3>
                                 <h5>Заказы</h5>
-                                <span>2019 - 2021 </span>
+                                <span>2019 - 2020 </span>
                             </div>
                             <div className="hr"></div>
                             <h4><label>ООО "Аренда Высоты"</label></h4>

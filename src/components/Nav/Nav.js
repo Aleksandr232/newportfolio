@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Nav(){
     const {theme, setTheme} = useTheme()
+    const [menuActive, setMenuactive] = useState(false)
     
-    
+   
     
 
     const ThemeClick=()=>{
@@ -31,9 +32,9 @@ export default function Nav(){
         <header>
             <div className="nav-bar">
                 <a href="#" onClick={easterBreaker} className="logo">Саша</a>
-                 <div className="navigation">
+                 <div className={menuActive ? 'navigation active' : 'navigation'}>
                     <div className="nav-items">
-                        <div className="nav-close-btn"></div>
+                        <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>
                         <Link className="active" to="/">Главная</Link>
                         <Link to="/about">Об мне</Link>
                         <Link to="/skills">Навыки</Link>
@@ -41,7 +42,7 @@ export default function Nav(){
                         <Link to="#contact">Контакты</Link>
                     </div>
                 </div>
-                <div   className="nav-menu-btn"></div>
+                <div onClick={()=>setMenuactive(prev=>!prev)}   className="nav-menu-btn"></div>
             </div>
         </header>
         </>  

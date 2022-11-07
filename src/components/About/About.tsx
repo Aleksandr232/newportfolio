@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function About() {
   return (
     <>
@@ -48,12 +49,13 @@ export default function About() {
                   </span>
                 </li>
               </ul>
-              <a
-                href="./assets/pdf/Самсонов Артем Павлович.pdf"
+              <a 
+                href="./assets/pdf/resume.pdf"
                 className="btn"
                 target="_blank"
+               
               >
-                Download CV <i className="fas fa-download"></i>
+                Скачать CV <i className="fas fa-download"></i>
               </a>
             </div>
           </div>

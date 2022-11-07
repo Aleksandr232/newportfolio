@@ -1333,6 +1333,7 @@ footer a {
         position: absolute;
         width: 160%;
         transform: translate(10%, -210px);
+        z-index: 2;
     }
     
     .svg-blob {

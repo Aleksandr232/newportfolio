@@ -64,6 +64,10 @@
     left: 20px;
 }
 
+.dark-theme .a_color_theme{
+    color: dodgerblue;
+}
+
 .light .theme-sun{
     position: absolute;
     visibility: hidden;

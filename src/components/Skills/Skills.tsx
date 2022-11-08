@@ -62,8 +62,8 @@ export default function Skills(){
                             <h4><label>ИП Мельников Андрей "НА ВЫСОТЕ"</label></h4>
                             <p>Высотные работы, монтаж и демонтаж строительных лесов,
                                 мойка фасадов и окон, уборка снега с кровли.
-                                Делал телеграмм  <a  href="https://t.me/onhigkznbot">бота</a>
-                                 <br/> и <a href="http://on-high.ru/">сайт</a> </p>
+                                Делал телеграмм  <a className="a_color_theme"  href="https://t.me/onhigkznbot">бота</a>
+                                 <br/> и <a className="a_color_theme"  href="http://on-high.ru/">сайт</a> </p>
                         </div>
                         <div className="experience-card">
                             <div className="upper">
@@ -75,7 +75,7 @@ export default function Skills(){
                             <h4><label>ООО "Аренда Высоты"</label></h4>
                             <p>Высотные работы, монтаж и демонтаж строительных лесов,
                                 мойка фасадов и окон, уборка снега с кровли.
-                                Делал телеграмм  <a  href="https://t.me/HireHeightsbot">бота</a>
+                                Делал телеграмм  <a className="a_color_theme"   href="https://t.me/HireHeightsbot">бота</a>
                                  </p>
                         </div>
                     </div>

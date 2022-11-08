@@ -41,10 +41,10 @@ export default function Nav(){
                  <div className = {menuActive  ? 'navigation active' : 'navigation'}>
                     <div className="nav-items">
                         <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>
-                        <Link  to="/" >Главная</Link>
-                        <Link to="/about">Об мне</Link>
-                        <Link  to="/skills">Навыки</Link>
-                        <Link to="/portfolio">Работы</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/" >Главная</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">Об мне</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">Навыки</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/portfolio">Работы</Link>
                         <Link to="#contact">Контакты</Link>
                     </div>
                 </div>

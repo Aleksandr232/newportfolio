@@ -2,7 +2,10 @@ import React,{useState, useLayoutEffect} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
 import { useTheme } from "../../hooks/useTheme";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+import sun from './icon-sun.png'
+import moon from './moon.png'
 
 export default function Nav(){
     const {theme, setTheme} = useTheme()
@@ -25,7 +28,8 @@ export default function Nav(){
 
 {/* Light/Dark theme button  */}
         <div onClick={ThemeClick} className="theme-btn flex-center">
-        <FontAwesomeIcon icon="fa-brands fa-twitter" />
+            <img className="theme-sun" src={sun} alt="" />
+            <img className="theme-moon" src={moon} alt="" />
         </div>
 
 {/*   Header */} 

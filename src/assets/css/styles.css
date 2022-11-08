@@ -20,7 +20,6 @@
     --transparent-color-01: rgba(0, 0, 0, 0.1);
     --transparent-color-02: rgba(106, 89, 209, 0.1);
     --line-color: #d7d7d7;
-
     /*========== Color Filter ==========*/
     --color-filter: invert(1);
 
@@ -50,7 +49,6 @@
      --bg-transparent-color: rgba(255, 255, 255, 0.1);
      --transparent-color-01: rgba(255, 255, 255, 0.1);
      --line-color: #454f6b;
- 
      /*========== Color Filter ==========*/
      --color-filter: invert(0);
  
@@ -59,6 +57,19 @@
      --scroll-thumb-color: #282f4e;
      --scroll-thumb-hover-color: #454f6b;
 }
+
+.dark-theme .theme-moon{
+    position: absolute;
+    visibility: hidden;
+    left: 20px;
+}
+
+.light .theme-sun{
+    position: absolute;
+    visibility: hidden;
+    left: 20px;
+}
+ 
 
 *{
     margin: 0;

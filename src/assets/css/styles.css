@@ -335,7 +335,7 @@ header.sticky .nav-bar {
     width: 20vw;
     border-radius: 50vw;
     transform: translate(0, 0);
-    z-index: 99999;
+    z-index: 2;
     margin: 0;
     top: 50px;
     left: 30%;
@@ -1230,6 +1230,7 @@ footer a {
         height: 40px;
         cursor: pointer;
         display: block;
+        
     }
 
     /*==================== Home section ====================*/

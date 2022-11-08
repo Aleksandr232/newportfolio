@@ -10,6 +10,8 @@ import moon from './moon.png'
 export default function Nav(){
     const {theme, setTheme} = useTheme()
     const [menuActive, setMenuactive] = useState(false)
+    const [close, setClose] = useState(false)
+   
     
    
     
@@ -18,7 +20,7 @@ export default function Nav(){
        theme === 'light' ? setTheme('dark-theme') : setTheme('light')   
     }
 
-   
+  
    
     
    
@@ -33,15 +35,15 @@ export default function Nav(){
         </div>
 
 {/*   Header */} 
-        <header>
+        <header >
             <div className="nav-bar">
                 <a href="#" onClick={easterBreaker} className="logo">Саша</a>
-                 <div className={menuActive ? 'navigation active' : 'navigation'}>
+                 <div className = {menuActive  ? 'navigation active' : 'navigation'}>
                     <div className="nav-items">
                         <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>
-                        <Link className="active" to="/">Главная</Link>
+                        <Link  to="/" >Главная</Link>
                         <Link to="/about">Об мне</Link>
-                        <Link to="/skills">Навыки</Link>
+                        <Link  to="/skills">Навыки</Link>
                         <Link to="/portfolio">Работы</Link>
                         <Link to="#contact">Контакты</Link>
                     </div>

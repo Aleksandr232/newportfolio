@@ -14,7 +14,7 @@ export default function Portfolio(){
                                 <div className="overlay"></div>
                                 <div className="info">
                                     <h3>3D Scroll site</h3>
-                                    <span>HTML, CSS, JavaScript</span>
+                                    <a href="https://github.com/konstantinkrumin/testing_react_with_jest_and_react_testing_library"><span>HTML, CSS, JavaScript</span></a>
                                 </div>
                                 <img src="./assets/img/portfolio1.jpg" alt=""/>
                             </div>

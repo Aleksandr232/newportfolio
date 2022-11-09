@@ -34,6 +34,10 @@ export default function Nav(){
             <img className="theme-moon" src={moon} alt="" />
         </div>
 
+        <div  className="language-btn flex-center">
+           
+        </div>
+
 {/*   Header */} 
         <header >
             <div className="nav-bar">
@@ -43,7 +47,7 @@ export default function Nav(){
                         <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/" >Главная</Link>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">Об мне</Link>
-                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">Навыки</Link>
+                          <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">Навыки</Link>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/portfolio">Работы</Link>
                         <Link to="#contact">Контакты</Link>
                     </div>

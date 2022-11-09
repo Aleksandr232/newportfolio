@@ -32,6 +32,7 @@ export default function Skills(){
                             <img /* align="center" */  height = "190"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aleksandr232&langs_count=10&layout=compact" />
                             </a>
                             </ul>
+                           
                         </div>
                         <div className="education">
                             <h4><label>Награды</label></h4>

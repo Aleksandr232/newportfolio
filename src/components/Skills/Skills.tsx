@@ -28,9 +28,10 @@ export default function Skills(){
                         <div className="education">
                             <h4><label>Стек</label></h4>
                             <ul className="bar">
-                            <a href="https://github.com/anuraghazra/github-readme-stats">
-                            <img /* align="center" */  height = "190"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aleksandr232&langs_count=10&layout=compact" />
-                            </a>
+                                <a href="https://github.com/anuraghazra/github-readme-stats">
+                                    <img className="staus_light" /* align="center" */  height = "190"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aleksandr232&langs_count=10&layout=compact" />
+                                    <img className="staus_dark" /* align="center" */  height = "190"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aleksandr232&show_icons=true&theme=shades-of-purple&langs_count=10&layout=compact" />
+                                </a>
                             </ul>
                            
                         </div>

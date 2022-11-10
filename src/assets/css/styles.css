@@ -68,6 +68,14 @@
     color: dodgerblue;
 }
 
+.light .staus_dark{
+    display: none;
+}
+
+.dark-theme .staus_light{
+    display: none;
+}
+
 .light .theme-sun{
     position: absolute;
     visibility: hidden;

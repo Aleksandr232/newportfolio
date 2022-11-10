@@ -28,3 +28,24 @@
         }
     }
 }
+
+@media (max-width: 730px){
+    .Tabs{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 0.6em;
+    }
+
+    .Tab {
+        padding: 16px 24px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 0.15s;
+        font-size: 1.4em;
+    }
+    .Tablabel{
+        width: 79px;
+        
+    }
+}

@@ -34,9 +34,7 @@ export default function Nav(){
             <img className="theme-moon" src={moon} alt="" />
         </div>
 
-        <div  className="language-btn flex-center">
-           
-        </div>
+        
 
 {/*   Header */} 
         <header >

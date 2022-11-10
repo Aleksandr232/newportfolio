@@ -10,7 +10,7 @@ import moon from './moon.png'
 export default function Nav(){
     const {theme, setTheme} = useTheme()
     const [menuActive, setMenuactive] = useState(false)
-    const [close, setClose] = useState(false)
+   
    
     
    

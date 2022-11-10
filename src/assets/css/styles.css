@@ -678,6 +678,8 @@ header.sticky .nav-bar {
     margin-bottom: 50px;
 }
 
+
+
 .service-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));

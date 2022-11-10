@@ -6,8 +6,8 @@ export default function About() {
     <>
       <section className="about section" id="about">
         <div className="container flex-center">
-          <h1 className="section-title-01">Об мне </h1>
-          <h2 className="section-title-02">Об мне</h2>
+          <h1 className="section-title-01">Обо мне </h1>
+          <h2 className="section-title-02">Обо мне</h2>
           <div className="content flex-center">
             <div className="about-img">
               <img src="./assets/img/perfil.jpeg" alt="" />
@@ -16,7 +16,7 @@ export default function About() {
               <div className="description">
                 <h3>Я Саша</h3>
                 <h4>
-                  A <span>Frontend-разработчик</span> из{" "}
+                  Я <span>Frontend-разработчик</span> из{" "}
                   <span>Казани , Россия</span>
                 </h4>
                 <p>

@@ -2,7 +2,12 @@ import React,{useState} from "react";
 import { Tabs } from "../Tabs/Tabs";
 import { ITab } from "../Tabs/Tabs";
 
+import rowing from './rowing.jpg';
+import number from './number.jpg';
+
+
 export default function Portfolio(){
+    const [modalActive, setModalactive] = useState(false)
     const tabs:ITab[] =[
         {id: '1', label: 'Веб-приложения'},
         {id: '2', label: 'Мобильное приложение'},
@@ -22,23 +27,23 @@ export default function Portfolio(){
                             <div className="content">
                             <div className="portfolio-list">
                                 <div className="img-card-container">
-                                    <div className="img-card">
-                                        <div className="overlay"></div>
+                                    <div onClick={()=>setModalactive(prev=>!prev)} className="img-card">
+                                        <div   className="overlay"></div>
                                         <div className="info">
-                                            <h3>3D Scroll site</h3>
+                                            <h3 >Сайт про греблю</h3>
                                             <a href="https://github.com/konstantinkrumin/testing_react_with_jest_and_react_testing_library"><span>HTML, CSS, JavaScript</span></a>
                                         </div>
-                                        <img src="./assets/img/portfolio1.jpg" alt=""/>
+                                        <img  src={rowing} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div  className={modalActive ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={()=>setModalactive(prev=>!prev)} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>3D Scroll site</h3>
-                                            <img src="assets/img/portfolio1.jpg" alt=""/>
+                                            <h3>Сайт про греблю</h3>
+                                            <img src={rowing} alt=""/>
                                             <p>A website with stunning 3D scroll animation, in modern HTML, CSS and JavaScript. A model of slide movement in depth, custom animation, as well as audio and video content on the page.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://3d-scroll-site.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://aleksandr232.github.io/rowingtatarstan.io/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>

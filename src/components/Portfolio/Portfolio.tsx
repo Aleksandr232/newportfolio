@@ -6,13 +6,45 @@ import rowing from './rowing.jpg';
 import number from './number.jpg';
 
 
+
 export default function Portfolio(){
+    
     const [modalActive, setModalactive] = useState(false)
+    const [modalActive1, setModalactive1] = useState(false)
+    const [modalActive2, setModalactive2] = useState(false)
+    const [modalActive3, setModalactive3] = useState(false)
+    const [modalActive4, setModalactive4] = useState(false)
+    const [modalActive5, setModalactive5] = useState(false)
+   
     const tabs:ITab[] =[
         {id: '1', label: 'Веб-приложения'},
         {id: '2', label: 'Мобильное приложение'},
         {id: '3', label: 'Телеграмм боты'}
     ]
+
+    const clickModal=()=>{
+        setModalactive(prev=>!prev)
+    }
+    const clickModal1=()=>{
+        setModalactive1(prev=>!prev)
+    }
+
+    const clickModal2=()=>{
+        setModalactive2(prev=>!prev)
+    }
+
+    const clickModal3=()=>{
+        setModalactive3(prev=>!prev)
+    }
+
+    const clickModal4=()=>{
+        setModalactive4(prev=>!prev)
+    }
+
+    const clickModal5=()=>{
+        setModalactive5(prev=>!prev)
+    }
+   
     const [selected, setSelected] = useState(tabs[0].id)
     const handleTabClick = (id:string | number)=>{
         setSelected(id)
@@ -27,8 +59,8 @@ export default function Portfolio(){
                             <div className="content">
                             <div className="portfolio-list">
                                 <div className="img-card-container">
-                                    <div onClick={()=>setModalactive(prev=>!prev)} className="img-card">
-                                        <div   className="overlay"></div>
+                                    <div  onClick={clickModal} className="img-card">
+                                        <div  className="overlay"></div>
                                         <div className="info">
                                             <h3 >Сайт про греблю</h3>
                                             <a href="https://github.com/konstantinkrumin/testing_react_with_jest_and_react_testing_library"><span>HTML, CSS, JavaScript</span></a>
@@ -36,32 +68,32 @@ export default function Portfolio(){
                                         <img  src={rowing} alt=""/>
                                     </div>
                                     <div  className={modalActive ? 'portfolio-model flex-center active' : 'portfolio-model'}>
-                                        <div onClick={()=>setModalactive(prev=>!prev)} className="portfolio-model-body">
+                                        <div onClick={clickModal}  className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Сайт про греблю</h3>
                                             <img src={rowing} alt=""/>
                                             <p>A website with stunning 3D scroll animation, in modern HTML, CSS and JavaScript. A model of slide movement in depth, custom animation, as well as audio and video content on the page.</p>
                                             <div className="portfolio-btns">
                                                 <a href="https://aleksandr232.github.io/rowingtatarstan.io/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Код</a>    
+                                                <a href="https://github.com/Aleksandr232/rowingtatarstan.io" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal1}  className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Draggable site</h3>
+                                            <h3>Счетчик</h3>
                                             <span>HTML, CSS, GSAP</span>
                                         </div>
-                                        <img src="./assets/img/portfolio2.jpg" alt=""/>
+                                        <img src={number} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div  className={modalActive1 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div  onClick={clickModal1}   className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Draggable site</h3>
-                                            <img src="assets/img/portfolio2.jpg" alt=""/>
+                                            <h3>Счетчик</h3>
+                                            <img src={number} alt=""/>
                                             <p>A beautiful website with smooth animation of movement in the viewing area, content design in the form of Masonry tiles in pure CSS and with support for the dark OS theme (Dark Mode).</p>
                                             <div className="portfolio-btns">
                                                 <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Live</a>

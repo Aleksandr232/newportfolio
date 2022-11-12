@@ -67,7 +67,11 @@ export default function Portfolio(){
                                         <div  className="overlay"></div>
                                         <div className="info">
                                             <h3 >Сайт про греблю</h3>
-                                            <a href="https://github.com/konstantinkrumin/testing_react_with_jest_and_react_testing_library"><span>HTML, CSS, JavaScript</span></a>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                            </span>
                                         </div>
                                         <img  src={rowing} alt=""/>
                                     </div>
@@ -76,7 +80,12 @@ export default function Portfolio(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Сайт про греблю</h3>
                                             <img src={rowing} alt=""/>
-                                            <p>A website with stunning 3D scroll animation, in modern HTML, CSS and JavaScript. A model of slide movement in depth, custom animation, as well as audio and video content on the page.</p>
+                                            <p>Первый сделанный сайт. Небольшой блог про греблю</p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                            </span>
                                             <div className="portfolio-btns">
                                                 <a href="https://aleksandr232.github.io/rowingtatarstan.io/" className="btn" target="_blank">Посмотреть</a>
                                                 <a href="https://github.com/Aleksandr232/rowingtatarstan.io" className="btn" target="_blank">Код</a>    
@@ -89,7 +98,12 @@ export default function Portfolio(){
                                         <div className="overlay"></div>
                                         <div className="info">
                                             <h3>Счетчик</h3>
-                                            <span>HTML, CSS, GSAP</span>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                         </div>
                                         <img src={number} alt=""/>
                                     </div>
@@ -98,10 +112,16 @@ export default function Portfolio(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Счетчик</h3>
                                             <img src={number} alt=""/>
-                                            <p>A beautiful website with smooth animation of movement in the viewing area, content design in the form of Masonry tiles in pure CSS and with support for the dark OS theme (Dark Mode).</p>
+                                            <p>Веб-приложение, где просто добавляешь или убераешь число. Показывает как работает состояние в React  </p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Код</a>    
+                                                <a href="https://number-io.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/Aleksandr232/number.io" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -111,7 +131,12 @@ export default function Portfolio(){
                                         <div className="overlay"></div>
                                         <div className="info">
                                             <h3>Todo list</h3>
-                                            <span>HTML, CSS and JavaScript</span>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                         </div>
                                         <img src={todo} style={{width:595}} alt=""/>
                                     </div>
@@ -120,10 +145,16 @@ export default function Portfolio(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Todo list</h3>
                                             <img src={todo} alt=""/>
-                                            <p>Calculator with JavaScript, CSS, HTML and Vanilla-tilt.js</p>
+                                            <p>Простенькое веб-приложение, добовление и удаления элементов из сосотяния  </p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Код</a>    
+                                                <a href="https://aleksandr232.github.io/add-employees.io/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/Aleksandr232/add-employees.io" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -133,7 +164,13 @@ export default function Portfolio(){
                                         <div className="overlay"></div>
                                         <div className="info">
                                             <h3>Строе портфолио</h3>
-                                            <span>HTML, CSS and JavaScript</span>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                         </div>
                                         <img src={oldport} style={{width:595}} alt=""/>
                                     </div>
@@ -142,20 +179,33 @@ export default function Portfolio(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Строе портфолио</h3>
                                             <img src={oldport} alt=""/>
-                                            <p>Creating a 3D scene. Applied animated background, iridescent stage lighting, 3D item rotation effect and custom slide switching effect (cubic-bezier). <br/>Stack: HTML, CSS and JavaScript.</p>
+                                            <p>Мое старое портфолио, где есть еще другие работы</p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Код</a>    
+                                                <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/Aleksandr232/meportfolio" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div className="img-card-container">
                                     <div onClick={clickModal4} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
                                             <h3>Тестовое задание</h3>
-                                            <span>HTML, CSS and JavaScript</span>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                         </div>
                                         <img src={test1} alt=""/>
                                     </div>
@@ -164,10 +214,16 @@ export default function Portfolio(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Тестовое задание</h3>
                                             <img src={test1} alt=""/>
-                                            <p>Create a fully responsive personal portfolio website. <br/>Stack: HTML, CSS and JavaScript.</p>
+                                            <p>Тестовое задание, где нужно было сделать верстку и интегрировать API </p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Код</a>    
+                                                <a href="https://testreact-cyan.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/Aleksandr232/testreact" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -177,7 +233,13 @@ export default function Portfolio(){
                                         <div className="overlay"></div>
                                         <div className="info">
                                             <h3>Тестовое задание</h3>
-                                            <span>HTML, CSS and Javascript</span>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" />
+                                            </span>
                                         </div>
                                         <img src={test2} style={{width:495}} alt=""/>
                                     </div>
@@ -186,10 +248,17 @@ export default function Portfolio(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Тестовое задание</h3>
                                             <img src={test2}  alt=""/>
-                                            <p>Creating a gallery with CSS, Blur, Parallax, Gradient. <br/>Stack: HTML, CSS and Javascript.</p>
+                                            <p>Тестовое задание, где нужно было сохранять состояние. Использовал Redux</p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Код</a>    
+                                                <a href="https://test-fin.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/Aleksandr232/test_fin" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>

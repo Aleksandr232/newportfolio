@@ -907,6 +907,11 @@ header.sticky .nav-bar {
     text-align: center;
 }
 
+.portfolio-btns {
+    display: grid;
+    grid-template-columns: repeat(2,164px);
+}
+
 .portfolio-model-body h3 {
     font-size: 1.5em;
 }

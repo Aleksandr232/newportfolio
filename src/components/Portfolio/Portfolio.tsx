@@ -4,6 +4,10 @@ import { ITab } from "../Tabs/Tabs";
 
 import rowing from './rowing.jpg';
 import number from './number.jpg';
+import todo from './todo.png';
+import oldport from './oldport.png';
+import test1 from './test1.png';
+import test2 from './test2.png';
 
 
 
@@ -96,96 +100,96 @@ export default function Portfolio(){
                                             <img src={number} alt=""/>
                                             <p>A beautiful website with smooth animation of movement in the viewing area, content design in the form of Masonry tiles in pure CSS and with support for the dark OS theme (Dark Mode).</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Code</a>    
+                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal2}  className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Calculator</h3>
+                                            <h3>Todo list</h3>
                                             <span>HTML, CSS and JavaScript</span>
                                         </div>
-                                        <img src="./assets/img/portfolio3.jpg" alt=""/>
+                                        <img src={todo} style={{width:595}} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div className={modalActive2 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal2}  className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Glassmorphism Effects</h3>
-                                            <img src="assets/img/portfolio3.jpg" alt=""/>
+                                            <h3>Todo list</h3>
+                                            <img src={todo} alt=""/>
                                             <p>Calculator with JavaScript, CSS, HTML and Vanilla-tilt.js</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal3} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Swiper 3D</h3>
+                                            <h3>Строе портфолио</h3>
                                             <span>HTML, CSS and JavaScript</span>
                                         </div>
-                                        <img src="./assets/img/portfolio4.jpg" alt=""/>
+                                        <img src={oldport} style={{width:595}} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div className={modalActive3 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal3} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Swiper 3D</h3>
-                                            <img src="assets/img/portfolio4.jpg" alt=""/>
+                                            <h3>Строе портфолио</h3>
+                                            <img src={oldport} alt=""/>
                                             <p>Creating a 3D scene. Applied animated background, iridescent stage lighting, 3D item rotation effect and custom slide switching effect (cubic-bezier). <br/>Stack: HTML, CSS and JavaScript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal4} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Portfolio site</h3>
+                                            <h3>Тестовое задание</h3>
                                             <span>HTML, CSS and JavaScript</span>
                                         </div>
-                                        <img src="./assets/img/portfolio5.jpg" alt=""/>
+                                        <img src={test1} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div className={modalActive4 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal4}   className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Portfolio site</h3>
-                                            <img src="assets/img/portfolio5.jpg" alt=""/>
+                                            <h3>Тестовое задание</h3>
+                                            <img src={test1} alt=""/>
                                             <p>Create a fully responsive personal portfolio website. <br/>Stack: HTML, CSS and JavaScript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal5} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Gallery Design</h3>
+                                            <h3>Тестовое задание</h3>
                                             <span>HTML, CSS and Javascript</span>
                                         </div>
-                                        <img src="./assets/img/portfolio6.jpg" alt=""/>
+                                        <img src={test2} style={{width:495}} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div className={modalActive5 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal5} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Gallery Design</h3>
-                                            <img src="assets/img/portfolio6.jpg" alt=""/>
+                                            <h3>Тестовое задание</h3>
+                                            <img src={test2}  alt=""/>
                                             <p>Creating a gallery with CSS, Blur, Parallax, Gradient. <br/>Stack: HTML, CSS and Javascript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -212,8 +216,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio1.jpg" alt=""/>
                                             <p>A website with stunning 3D scroll animation, in modern HTML, CSS and JavaScript. A model of slide movement in depth, custom animation, as well as audio and video content on the page.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://3d-scroll-site.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://3d-scroll-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -234,8 +238,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio2.jpg" alt=""/>
                                             <p>A beautiful website with smooth animation of movement in the viewing area, content design in the form of Masonry tiles in pure CSS and with support for the dark OS theme (Dark Mode).</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Code</a>    
+                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -256,8 +260,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio3.jpg" alt=""/>
                                             <p>Calculator with JavaScript, CSS, HTML and Vanilla-tilt.js</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -278,8 +282,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio4.jpg" alt=""/>
                                             <p>Creating a 3D scene. Applied animated background, iridescent stage lighting, 3D item rotation effect and custom slide switching effect (cubic-bezier). <br/>Stack: HTML, CSS and JavaScript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -300,8 +304,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio5.jpg" alt=""/>
                                             <p>Create a fully responsive personal portfolio website. <br/>Stack: HTML, CSS and JavaScript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -322,8 +326,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio6.jpg" alt=""/>
                                             <p>Creating a gallery with CSS, Blur, Parallax, Gradient. <br/>Stack: HTML, CSS and Javascript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -350,8 +354,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio1.jpg" alt=""/>
                                             <p>A website with stunning 3D scroll animation, in modern HTML, CSS and JavaScript. A model of slide movement in depth, custom animation, as well as audio and video content on the page.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://3d-scroll-site.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://3d-scroll-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -372,8 +376,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio2.jpg" alt=""/>
                                             <p>A beautiful website with smooth animation of movement in the viewing area, content design in the form of Masonry tiles in pure CSS and with support for the dark OS theme (Dark Mode).</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Code</a>    
+                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -394,8 +398,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio3.jpg" alt=""/>
                                             <p>Calculator with JavaScript, CSS, HTML and Vanilla-tilt.js</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -416,8 +420,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio4.jpg" alt=""/>
                                             <p>Creating a 3D scene. Applied animated background, iridescent stage lighting, 3D item rotation effect and custom slide switching effect (cubic-bezier). <br/>Stack: HTML, CSS and JavaScript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -438,8 +442,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio5.jpg" alt=""/>
                                             <p>Create a fully responsive personal portfolio website. <br/>Stack: HTML, CSS and JavaScript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -460,8 +464,8 @@ export default function Portfolio(){
                                             <img src="assets/img/portfolio6.jpg" alt=""/>
                                             <p>Creating a gallery with CSS, Blur, Parallax, Gradient. <br/>Stack: HTML, CSS and Javascript.</p>
                                             <div className="portfolio-btns">
-                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Live</a>
-                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Code</a>    
+                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Посмотреть</a>
+                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>

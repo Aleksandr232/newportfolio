@@ -80,6 +80,9 @@
     display: none;
 }
 
+.dark-theme .arenda{
+    background-color:white
+}
 .dark-theme .staus_light{
     display: none;
 }

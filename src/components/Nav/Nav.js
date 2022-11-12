@@ -6,6 +6,8 @@ import { useTheme } from "../../hooks/useTheme";
 
 import sun from './icon-sun.png'
 import moon from './moon.png'
+import dev from './dev.png'
+import dev1 from './dev1.png'
 
 export default function Nav(){
     const {theme, setTheme} = useTheme()
@@ -39,7 +41,9 @@ export default function Nav(){
 {/*   Header */} 
         <header >
             <div className="nav-bar">
-                <a href="#" onClick={easterBreaker} className="logo">Саша</a>
+                <div onClick={easterBreaker} className="logo">Алекс</div>
+                <a href="https://github.com/Aleksandr232" className="dev"><img style={{width:190, left: 20}} src={dev} alt="" /></a>
+                <a href="https://github.com/Aleksandr232" className="dev1"><img style={{width:190, left: 20}} src={dev1} alt="" /></a>
                  <div className = {menuActive  ? 'navigation active' : 'navigation'}>
                     <div className="nav-items">
                         <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>

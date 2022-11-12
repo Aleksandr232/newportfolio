@@ -72,6 +72,14 @@
     display: none;
 }
 
+.light .dev1{
+    display: none;
+}
+
+.dark-theme .dev{
+    display: none;
+}
+
 .dark-theme .staus_light{
     display: none;
 }
@@ -252,6 +260,21 @@ header.sticky .nav-bar {
     color: var(--first-color);
     font-size: 1.3em;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.dev{
+    color: var(--first-color);
+    font-size: 1.3em;
+    font-weight: 600;
+    right: 230px;
+}
+
+.dev1{
+    color: var(--first-color);
+    font-size: 1.3em;
+    font-weight: 600;
+    right: 230px;
 }
 
 .nav-items a {
@@ -1412,7 +1435,19 @@ footer a {
         transform: translateY(-65px);
     }
 
-   
+    .dev{
+        color: var(--first-color);
+        font-size: 1.3em;
+        font-weight: 600;
+        right: 40px;
+    }
+
+    .dev1{
+        color: var(--first-color);
+        font-size: 1.3em;
+        font-weight: 600;
+        right: 40px;
+    }
 
     /*==================== Home section ====================*/
     .home .home-container {

@@ -280,7 +280,7 @@ export default function Webport(){
                                             </span>
                                             <div className="portfolio-btns">
                                                 <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/meportfolio" className="btn" target="_blank">Код</a>    
+                                                <a href="https://github.com/Aleksandr232/newportfolio" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>

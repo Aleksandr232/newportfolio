@@ -1,138 +1,82 @@
-import React from "react";
+import React,{useState} from "react";
 
+import mobiapp from './mobiapp.jpg'
+import calc from './calc.png'
 
 export default function Mobileport(){
+    const [modalActive, setModalactive] = useState(false)
+    const [modalActive1, setModalactive1] = useState(false)
+
+    const clickModal=()=>{
+        setModalactive(prev=>!prev)
+    }
+    const clickModal1=()=>{
+        setModalactive1(prev=>!prev)
+    }
     return(
         <div className="content">
                             <div className="portfolio-list">
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>3D Scroll site</h3>
-                                            <a href="https://github.com/konstantinkrumin/testing_react_with_jest_and_react_testing_library"><span>HTML, CSS, JavaScript</span></a>
+                                            <h3>Mobile портфолио</h3>
+                                            <span>
+                                            <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                            <img style={{width:29}} src="https://camo.githubusercontent.com/127515d9d5f97d41073f2f7706e79e5f17ae32d235d8f2b88199870ddba9b70e/68747470733a2f2f6c656d75727465616d2e72752f6173736574732f696d672f72656163742d6e61746976652d6c6f676f2e706e67" />
+                                            <img style={{width:80}} src="https://iosdev.tools/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGdLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a27f5abde8cd01694a495ef190dd926b08b4f9f9/Expo-logo.png" alt="" />
+                                            
+                                            </span>
                                         </div>
-                                        <img src="./assets/img/portfolio1.jpg" alt=""/>
+                                        <img style={{width:340, height:420, position:'absolute', left:30}}  src={mobiapp} alt=""/>
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div className={modalActive ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>3D Scroll site</h3>
-                                            <img src="assets/img/portfolio1.jpg" alt=""/>
-                                            <p>A website with stunning 3D scroll animation, in modern HTML, CSS and JavaScript. A model of slide movement in depth, custom animation, as well as audio and video content on the page.</p>
+                                            <h3>Мобильная версия портфолио </h3>
+                                            <img style={{width:340, height:300}}  src={mobiapp} alt=""/>
+                                            <p>Андроид приложение, портфолио. написаное на React-native</p>
+                                            <span>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:29}} src="https://camo.githubusercontent.com/127515d9d5f97d41073f2f7706e79e5f17ae32d235d8f2b88199870ddba9b70e/68747470733a2f2f6c656d75727465616d2e72752f6173736574732f696d672f72656163742d6e61746976652d6c6f676f2e706e67" />
+                                                <img style={{width:80}} src="https://iosdev.tools/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGdLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a27f5abde8cd01694a495ef190dd926b08b4f9f9/Expo-logo.png" alt="" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://3d-scroll-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/3d-scroll-site.git" className="btn" target="_blank">Код</a>    
+                                                <a href='https://disk.yandex.ru/d/XF67BdvTE42Ltw' className="btn" target="_blank">Скачать</a>
+                                                <a href="https://github.com/Aleksandr232/portfolioapp" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="img-card-container">
-                                    <div className="img-card">
+                                    <div onClick={clickModal1} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Draggable site</h3>
-                                            <span>HTML, CSS, GSAP</span>
+                                            <h3>Mobile калькулятор</h3>
+                                            <span>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
+                                                <img style={{width:29}} src="https://camo.githubusercontent.com/127515d9d5f97d41073f2f7706e79e5f17ae32d235d8f2b88199870ddba9b70e/68747470733a2f2f6c656d75727465616d2e72752f6173736574732f696d672f72656163742d6e61746976652d6c6f676f2e706e67" />
+                                                <img  style={{width:80, backgroundColor:'gray'}} src="https://iosdev.tools/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGdLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a27f5abde8cd01694a495ef190dd926b08b4f9f9/Expo-logo.png" alt="" />
+                                            </span>
                                         </div>
-                                        <img src="./assets/img/portfolio2.jpg" alt=""/>
+                                        <img src={calc} alt="" />
                                     </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
+                                    <div className={modalActive1 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal1} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Draggable site</h3>
-                                            <img src="assets/img/portfolio2.jpg" alt=""/>
-                                            <p>A beautiful website with smooth animation of movement in the viewing area, content design in the form of Masonry tiles in pure CSS and with support for the dark OS theme (Dark Mode).</p>
+                                            <h3>Mobile калькулятор</h3>
+                                            <img style={{width:380, height:250}} src={calc} alt=""/>
+                                            <p>Мобильное приложение написаное на React-native версия для android</p>
+                                            <span>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
+                                                <img style={{width:29}} src="https://camo.githubusercontent.com/127515d9d5f97d41073f2f7706e79e5f17ae32d235d8f2b88199870ddba9b70e/68747470733a2f2f6c656d75727465616d2e72752f6173736574732f696d672f72656163742d6e61746976652d6c6f676f2e706e67" />
+                                                <img style={{width:80}} src="https://iosdev.tools/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGdLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a27f5abde8cd01694a495ef190dd926b08b4f9f9/Expo-logo.png" alt="" />
+                                            </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://draggable-site.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Draggable_site.git/" className="btn" target="_blank">Код</a>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="img-card-container">
-                                    <div className="img-card">
-                                        <div className="overlay"></div>
-                                        <div className="info">
-                                            <h3>Calculator</h3>
-                                            <span>HTML, CSS and JavaScript</span>
-                                        </div>
-                                        <img src="./assets/img/portfolio3.jpg" alt=""/>
-                                    </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
-                                            <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Glassmorphism Effects</h3>
-                                            <img src="assets/img/portfolio3.jpg" alt=""/>
-                                            <p>Calculator with JavaScript, CSS, HTML and Vanilla-tilt.js</p>
-                                            <div className="portfolio-btns">
-                                                <a href="https://calculator-fe2a6yfdc-artyomsamsonov.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Calculator.git" className="btn" target="_blank">Код</a>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="img-card-container">
-                                    <div className="img-card">
-                                        <div className="overlay"></div>
-                                        <div className="info">
-                                            <h3>Swiper 3D</h3>
-                                            <span>HTML, CSS and JavaScript</span>
-                                        </div>
-                                        <img src="./assets/img/portfolio4.jpg" alt=""/>
-                                    </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
-                                            <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Swiper 3D</h3>
-                                            <img src="assets/img/portfolio4.jpg" alt=""/>
-                                            <p>Creating a 3D scene. Applied animated background, iridescent stage lighting, 3D item rotation effect and custom slide switching effect (cubic-bezier). <br/>Stack: HTML, CSS and JavaScript.</p>
-                                            <div className="portfolio-btns">
-                                                <a href="https://swiper-3d-assassinscreed.vercel.app" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Swiper-3d-assassinscreed.git" className="btn" target="_blank">Код</a>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="img-card-container">
-                                    <div className="img-card">
-                                        <div className="overlay"></div>
-                                        <div className="info">
-                                            <h3>Portfolio site</h3>
-                                            <span>HTML, CSS and JavaScript</span>
-                                        </div>
-                                        <img src="./assets/img/portfolio5.jpg" alt=""/>
-                                    </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
-                                            <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Portfolio site</h3>
-                                            <img src="assets/img/portfolio5.jpg" alt=""/>
-                                            <p>Create a fully responsive personal portfolio website. <br/>Stack: HTML, CSS and JavaScript.</p>
-                                            <div className="portfolio-btns">
-                                                <a href="https://portfolio-zeta-sooty-98.vercel.app" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/Portfolio.git" className="btn" target="_blank">Код</a>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="img-card-container">
-                                    <div className="img-card">
-                                        <div className="overlay"></div>
-                                        <div className="info">
-                                            <h3>Gallery Design</h3>
-                                            <span>HTML, CSS and Javascript</span>
-                                        </div>
-                                        <img src="./assets/img/portfolio6.jpg" alt=""/>
-                                    </div>
-                                    <div className="portfolio-model flex-center">
-                                        <div className="portfolio-model-body">
-                                            <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Gallery Design</h3>
-                                            <img src="assets/img/portfolio6.jpg" alt=""/>
-                                            <p>Creating a gallery with CSS, Blur, Parallax, Gradient. <br/>Stack: HTML, CSS and Javascript.</p>
-                                            <div className="portfolio-btns">
-                                                <a href="https://gallery-swiper-js-dfus7hhnn-artyomsamsonov.vercel.app" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/ArtyomSamsonov/gallery-swiper-js.git" className="btn" target="_blank">Код</a>    
+                                                <a href="https://disk.yandex.ru/d/QnpKyXw5b922tQ" className="btn" target="_blank">Скачать</a>
+                                                <a href="https://github.com/Aleksandr232/clacapp" className="btn" target="_blank">Код</a>    
                                             </div>
                                         </div>
                                     </div>

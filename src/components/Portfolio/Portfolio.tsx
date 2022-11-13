@@ -10,9 +10,9 @@ import Webport from "../Webport/Webport";
 export default function Portfolio(){
     
     const tabs:ITab[] =[
-        {id: '1', label: 'Веб-приложения'},
-        {id: '2', label: 'Мобильное приложение'},
-        {id: '3', label: 'Телеграмм боты'}
+        {id: '1', label: 'Web app'},
+        {id: '2', label: 'Mobile app'},
+        {id: '3', label: 'Bot'}
     ]
 
    

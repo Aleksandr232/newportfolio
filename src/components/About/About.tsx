@@ -42,7 +42,7 @@ export default function About() {
                   <span>Язык программирования</span>
                 </li>
                 <li className="list-item">
-                  <h3>&#x221e</h3>
+                  <h3>∞</h3>
                   <span>
                     Желания <br />
                     учится

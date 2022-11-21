@@ -53,7 +53,7 @@ export default function Nav(){
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">Об мне</Link>
                           <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">Навыки</Link>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/portfolio">Работы</Link>
-                        <Link to="#contact">Контакты</Link>
+                        <Link to="/contact">Контакты</Link>
                     </div>
                 </div>
                 <div onClick={()=>setMenuactive(prev=>!prev)}   className="nav-menu-btn"></div>

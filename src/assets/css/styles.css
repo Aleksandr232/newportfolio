@@ -113,6 +113,12 @@ body {
     overflow-x: hidden !important;
 }
 
+.mail_text{
+    position: absolute;
+    left: 360px;
+    top: 590px;
+}
+
 /* a {
     text-decoration: none;
 } */
@@ -1061,8 +1067,8 @@ header.sticky .nav-bar {
 
 /*==================== Contact section ====================*/
 .contact .container .content {
-    display: flex;
-    justify-content: space-between;
+   /*  display: flex;
+    justify-content: space-between; */
     width: 100%;
 }
 
@@ -1492,6 +1498,13 @@ footer a {
     .get-in-touch .contact-card {
         display: grid;
     }
+
+    
+.mail_text {
+    position: absolute;
+    left: 63px;
+    top: 613px;
+}
 
     .contact-card .title {
         font-size: 0.6rem;

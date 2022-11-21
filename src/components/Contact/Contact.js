@@ -1,54 +1,69 @@
-import React,{useState} from "react"
-import { sendMail } from "../../helper/Mail";
- 
-export default function Contact(){
-    const [values, setValues] = useState({
-        userEmail:'',
-        message:'',
-        status:false
-    })
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
-    const {userEmail, message} = values;
-    const handleChange = name => event =>{
-        setValues({...values,[name]:event.target.value})
+export default function Contact() {
+    const [text, setText] = useState('')
+
+    const mail=()=>{
+        setText('Письмо успешно отправлено')
     }
+  const form = useRef();
 
-    const handleSumbit=event=>{
-        event.preventDefault();
-        console.log('значения email', userEmail)
-        console.log('значения сообщения', message)
-        sendMail({userEmail, message}).then(data=>{
-            if(data.err){
-                console.log('err', data.err)
-            }else{
-                console.log('Успешно', data)
-                setValues({...values, status:true})
-            }
-        }).catch(console.log('Ошибка отпраки сообщения'))
-    }
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    return(
-        <section class="contact section" id="contact">
-        <div class="container flex-center">
-            <h1 class="section-title-01">Contact Me</h1>
-            <h2 class="section-title-02">Contact Me</h2>
-            <div class="content">
-                <div class="contact-right">
-                    <p>I'm always open to discussing product<br/><span> design work or partnerships.</span></p>
-                    <form onSubmit={handleSumbit} class="contact-form">
-                        <div class="second-row">
-                            <input value={userEmail} onChange={handleChange('userEmail')} type="email" placeholder="Email"/>
-                        </div>
-                        <div class="third-row">
-                            <textarea value={message} onChange={handleChange('message')} on name="message" id="" rows="7" placeholder="Сообщение"></textarea>
-                        </div>
-                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
+    emailjs
+      .sendForm(
+        "service_lpyejlf",
+        "template_dxsb78r",
+        e.target,
+        "U-vJA2UpFX4L5tNTY"
+      ).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  return (
+    <section class="contact section" id="contact">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Связаться со мной</h1>
+        <h2 class="section-title-02">Связаться со мной</h2>
+        <div class="content">
+          <div class="contact-right">
+            <p>
+              Напишите мне
+              <br />
+                <span>Обсудим интересный проект </span>
+              </p>
+            <form ref={form} onSubmit={sendEmail} class="contact-form">
+              <div class="first-row">
+                <input type="text" name="name" placeholder="Имя" />
+              </div>
+              <div class="second-row">
+                <input type="email" name="email" placeholder="Почта" />
+              </div>
+              <div className="mail_text">{text}</div>
+              <div class="third-row">
+                <textarea
+                  on
+                  name="message"
+                  id=""
+                  rows="7"
+                  placeholder="Сообщение"
+                ></textarea>
+              </div>
+              <button onClick={mail} class="btn" type="submit">
+                Отправить<i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
         </div>
-
-
-    </section>            
-    )
+      </div>
+    </section>
+  );
 }

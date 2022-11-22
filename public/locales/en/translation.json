@@ -1,3 +1,7 @@
 {
-    "name": "Hello, I'm Alex"
+    "name_text": "Hello, I'm Alex",
+    "name": "Alex",
+    "dev": "frontend developer",
+    "main": "I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.",
+    "contact_btn":"Contact me"
 }

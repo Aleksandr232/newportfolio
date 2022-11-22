@@ -13,7 +13,7 @@ import dev1 from './dev1.png'
 
 
 export default function Nav(){
-    const {  i18n } = useTranslation();
+    const {t,  i18n } = useTranslation();
     const {theme, setTheme} = useTheme()
     const {lang, setLang} = useLang()
     const [menuActive, setMenuactive] = useState(false)
@@ -55,7 +55,7 @@ export default function Nav(){
 
         <header >
             <div className="nav-bar">
-                <div onClick={easterBreaker} className="logo">Алекс</div>
+                <div onClick={easterBreaker} className="logo">{t("name")}</div>
                 <a href="https://github.com/Aleksandr232" className="dev"><img style={{width:190, left: 20}} src={dev} alt="" /></a>
                 <a href="https://github.com/Aleksandr232" className="dev1"><img style={{width:190, left: 20}} src={dev1} alt="" /></a>
                  <div className = {menuActive  ? 'navigation active' : 'navigation'}>

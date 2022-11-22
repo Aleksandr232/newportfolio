@@ -20,10 +20,10 @@ export default function Home(){
                     <a href="" target="_blank" rel="noreferrer"><i className="fas fa-envelope"></i></a>
                 </div>
                 <div className="info">
-                    <h2>{t("name")}</h2>
-                    <h3>frontend developer</h3>
-                    <p>I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.</p>
-                    <a onClick={()=>navigate('/contact')} className="btn" target="_blank" rel="noreferrer">Свяжитесь со мной <i className="fas fa-arrow-circle-right"></i></a>
+                    <h2>{t("name_text")}</h2>
+                    <h3>{t("dev")}</h3>
+                    <p>{t("main")}</p>
+                    <a onClick={()=>navigate('/contact')} className="btn" target="_blank" rel="noreferrer">{t("contact_btn")} <i className="fas fa-arrow-circle-right"></i></a>
                 </div>
                 <div className="home-img">
                     <div className="blob">

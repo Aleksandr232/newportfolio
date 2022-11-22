@@ -12,11 +12,11 @@ export default function Skills(){
                 <h2 className="section-title-02">{t("nav_skills")}</h2>
                 <div className="content">
                     <div className="skills-description">
-                        <h3>Образование & Технический стек</h3>
+                        <h3>{t("edu")}</h3>
                     </div>
                     <div className="skills-info education-all">
                         <div className="education">
-                            <h4><label>Образование и курсы</label></h4>
+                            <h4><label>{t("cours")}</label></h4>
                             <ul className="edu-list">
                                 <li className="item">
                                     <span className="year">2021...</span>
@@ -24,12 +24,12 @@ export default function Skills(){
                                 </li>
                                 <li className="item">
                                     <span className="year">2017-2021</span>
-                                    <p><span>Тренер  (БАКАЛАР)</span> - ПГУФКСиТ</p>
+                                    <p><span>{t("coach")}</span> - ПГУФКСиТ</p>
                                 </li>
                             </ul>
                         </div>
                         <div className="education">
-                            <h4><label>Стек</label></h4>
+                            <h4><label>{t("stack")}</label></h4>
                             <ul className="bar">
                                 <a href="https://github.com/anuraghazra/github-readme-stats">
                                     <img className="staus_light" /* align="center" */  height = "190"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aleksandr232&langs_count=10&layout=compact" />
@@ -39,48 +39,44 @@ export default function Skills(){
                            
                         </div>
                         <div className="education">
-                            <h4><label>Награды</label></h4>
+                            <h4><label>{t("awards")}</label></h4>
                             <ul className="edu-list">
                                 <li className="item">
                                     <span className="year">2021</span>
-                                    <p><span>Звание</span> - Мастер спорта по академической гребле</p>
+                                    <p><span>{t("rank")}</span> - {t("sport")}</p>
                                 </li>
                                 <li className="item">
                                     <span className="year">2022</span>
-                                    <p><span>Благодарственное письмо</span> - от Мэра Казани</p>
+                                    <p><span>{t("lettr")}</span> - {t("mayor")}</p>
                                 </li>
                     
                             </ul>
                         </div>
                     </div>
                     <div className="skills-description">
-                        <h3>Опыт работы</h3>
+                        <h3>{t("work")}</h3>
                     </div>
                     <div className="skills-info">
                         <div className="experience-card">
                             <div className="upper">
-                                <h3>Промышленный альпинист</h3>
-                                <h5>Заказы</h5>
+                                <h3>{t("climber")}</h3>
+                                <h5>{t("orders")}</h5>
                                 <span>2020 - </span>
                             </div>
                             <div className="hr"></div>
                             <h4><label>ИП Мельников Андрей "НА ВЫСОТЕ"</label></h4>
-                            <p>Высотные работы, монтаж и демонтаж строительных лесов,
-                                мойка фасадов и окон, уборка снега с кровли.
-                                Делал телеграмм  <a className="a_color_theme"  href="https://t.me/onhigkznbot">бота</a>
-                                 <br/> и <a className="a_color_theme"  href="http://on-high.ru/">сайт</a> </p>
+                            <p>{t("workme")}  <a className="a_color_theme"  href="https://t.me/onhigkznbot">{t("bot")}</a>
+                                 <br/> {t("and")} <a className="a_color_theme"  href="http://on-high.ru/">{t("site")}</a> </p>
                         </div>
                         <div className="experience-card">
                             <div className="upper">
-                                <h3>Промышленный альпинист</h3>
-                                <h5>Заказы</h5>
+                                <h3>{t("climber")}</h3>
+                                <h5>{t("orders")}</h5>
                                 <span>2019 - 2020 </span>
                             </div>
                             <div className="hr"></div>
                             <h4><label>ООО "Аренда Высоты"</label></h4>
-                            <p>Высотные работы, монтаж и демонтаж строительных лесов,
-                                мойка фасадов и окон, уборка снега с кровли.
-                                Делал телеграмм  <a className="a_color_theme"   href="https://t.me/HireHeightsbot">бота</a>
+                            <p>{t("workme")}  <a className="a_color_theme"   href="https://t.me/HireHeightsbot">{t("bot")}</a>
                                  </p>
                         </div>
                     </div>

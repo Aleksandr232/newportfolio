@@ -1,14 +1,16 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+    const { t } = useTranslation();
     const [text, setText] = useState('')
      
 
     
 
     const mail=()=>{
-        setText('Письмо успешно отправлено')
+        setText((t('success')))
         
     }
   const form = useRef();
@@ -36,8 +38,8 @@ export default function Contact() {
   return (
     <section class="contact section" id="contact">
       <div class="container flex-center">
-        <h1 class="section-title-01">Связаться со мной</h1>
-        <h2 class="section-title-02">Связаться со мной</h2>
+        <h1 class="section-title-01">{t("contact_btn")}</h1>
+        <h2 class="section-title-02">{t("contact_btn")}</h2>
         <div class="content">
           <div class="contact-right">
             <p>

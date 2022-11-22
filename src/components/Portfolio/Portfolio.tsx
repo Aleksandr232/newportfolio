@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { useTranslation } from "react-i18next";
 import { Tabs } from "../Tabs/Tabs";
 import { ITab } from "../Tabs/Tabs";
 import Mobileport from "../Mobilport/Mobileport";
@@ -8,6 +9,7 @@ import Webport from "../Webport/Webport";
 
 
 export default function Portfolio(){
+    const { t } = useTranslation();
     
     const tabs:ITab[] =[
         {id: '1', label: 'Web app'},
@@ -24,8 +26,8 @@ export default function Portfolio(){
     return(
                  <section className="portfolio section" id="portfolio">
             <div className="container flex-center">
-                <h1 className="section-title-01">Работы</h1>
-                <h2 className="section-title-02">Работы</h2>
+                <h1 className="section-title-01">{t("nav_portfolio")}</h1>
+                <h2 className="section-title-02">{t("nav_portfolio")}</h2>
                     <Tabs tabs={tabs} selectedId={selected} onClick={handleTabClick}/>
                     {selected === tabs[0].id && (
                             <Webport/>

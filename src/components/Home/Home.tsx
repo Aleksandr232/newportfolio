@@ -1,10 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 import me from './img/mess.png'
 
 export default function Home(){
     const navigate = useNavigate()
+    const { t } = useTranslation();
 
     return(
         <>
@@ -18,7 +20,7 @@ export default function Home(){
                     <a href="" target="_blank" rel="noreferrer"><i className="fas fa-envelope"></i></a>
                 </div>
                 <div className="info">
-                    <h2>Привет, я Алекс</h2>
+                    <h2>{t("name")}</h2>
                     <h3>frontend developer</h3>
                     <p>I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.</p>
                     <a onClick={()=>navigate('/contact')} className="btn" target="_blank" rel="noreferrer">Свяжитесь со мной <i className="fas fa-arrow-circle-right"></i></a>

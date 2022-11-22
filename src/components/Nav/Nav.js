@@ -1,8 +1,9 @@
 import React,{useState, useLayoutEffect} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
-import { useTheme } from "../../hooks/useTheme";
-
+import { useTheme} from "../../hooks/useTheme";
+import { useLang } from "../../hooks/useLang";
+import { useTranslation } from 'react-i18next';
 
 import sun from './icon-sun.png'
 import moon from './moon.png'
@@ -12,7 +13,9 @@ import dev1 from './dev1.png'
 
 
 export default function Nav(){
+    const {  i18n } = useTranslation();
     const {theme, setTheme} = useTheme()
+    const {lang, setLang} = useLang()
     const [menuActive, setMenuactive] = useState(false)
    
    
@@ -24,6 +27,11 @@ export default function Nav(){
        theme === 'light' ? setTheme('dark-theme') : setTheme('light')   
     }
 
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+
+        lang === 'ru' ? setLang('en') : setLang('ru')
+      };
   
    
     
@@ -32,15 +40,19 @@ export default function Nav(){
     return(
        <>
 
-{/* Light/Dark theme button  */}
+
         <div onClick={ThemeClick} className="theme-btn flex-center">
             <img className="theme-sun" src={sun} alt="" />
             <img className="theme-moon" src={moon} alt="" />
         </div>
 
+        <div onClick={() => changeLanguage(lang)} className="language-btn flex-center">
+            EN
+        </div>
         
 
-{/*   Header */} 
+
+
         <header >
             <div className="nav-bar">
                 <div onClick={easterBreaker} className="logo">Алекс</div>

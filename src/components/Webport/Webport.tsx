@@ -282,7 +282,7 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://newportfolio-sooty-kappa.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
                                                 <a href="https://github.com/Aleksandr232/newportfolio" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>

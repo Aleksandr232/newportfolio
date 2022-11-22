@@ -16,8 +16,7 @@ import dev1 from './dev1.png'
 export default function Nav(){
     const {t,  i18n } = useTranslation();
     const {theme, setTheme} = useTheme()
-    const {lang, setLang} = useLang()
-    const {img, setImg} =useLang()
+    const {lang, setLang, img, setImg} = useLang()
     const [menuActive, setMenuactive] = useState(false)
    
    

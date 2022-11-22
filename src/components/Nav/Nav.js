@@ -61,11 +61,11 @@ export default function Nav(){
                  <div className = {menuActive  ? 'navigation active' : 'navigation'}>
                     <div className="nav-items">
                         <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>
-                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/" >Главная</Link>
-                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">Об мне</Link>
-                          <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">Навыки</Link>
-                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/portfolio">Работы</Link>
-                        <Link to="/contact">Контакты</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/" >{t("nav_home")}</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">{t("nav_about")}</Link>
+                          <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">{t("nav_skills")}</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/portfolio">{t("nav_portfolio")}</Link>
+                        <Link to="/contact">{t("nav_contact")}</Link>
                     </div>
                 </div>
                 <div onClick={()=>setMenuactive(prev=>!prev)}   className="nav-menu-btn"></div>

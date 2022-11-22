@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 export default function Skills(){
+    const { t } = useTranslation();
+
     return(
         <>
             <section className="skills section" id="skills">
             <div className="container flex-center">
-                <h1 className="section-title-01">Навыки</h1>
-                <h2 className="section-title-02">Навыки</h2>
+                <h1 className="section-title-01">{t("nav_skills")}</h1>
+                <h2 className="section-title-02">{t("nav_skills")}</h2>
                 <div className="content">
                     <div className="skills-description">
                         <h3>Образование & Технический стек</h3>

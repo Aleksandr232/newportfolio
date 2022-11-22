@@ -1,20 +1,22 @@
 import React from "react";
-
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const { t } = useTranslation();
+
+
   return (
     <>
       <section className="about section" id="about">
         <div className="container flex-center">
-          <h1 className="section-title-01">Обо мне </h1>
-          <h2 className="section-title-02">Обо мне</h2>
+          <h1 className="section-title-01">{t("nav_about")}</h1>
+          <h2 className="section-title-02">{t("nav_about")}</h2>
           <div className="content flex-center">
             <div className="about-img">
               <img src="./assets/img/perfil.jpeg" alt="" />
             </div>
             <div className="about-info">
               <div className="description">
-                <h3>Я Саша</h3>
                 <h4>
                   Я <span>Frontend-разработчик</span> из{" "}
                   <span>Казани , Россия</span>

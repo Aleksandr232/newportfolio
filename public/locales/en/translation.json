@@ -3,5 +3,10 @@
     "name": "Alex",
     "dev": "frontend developer",
     "main": "I am looking for interesting work and to increase my skills as a Web Developer. Let's create some perfect together.",
-    "contact_btn":"Contact me"
+    "contact_btn":"Contact me",
+    "nav_home":"Home",
+    "nav_about":"About me",
+    "nav_skills":"Skills",
+    "nav_portfolio":"Portfolio",
+    "nav_contact":"Contact"
 }

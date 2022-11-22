@@ -3,14 +3,19 @@ import emailjs from "emailjs-com";
 
 export default function Contact() {
     const [text, setText] = useState('')
+     
+
+    
 
     const mail=()=>{
         setText('Письмо успешно отправлено')
+        
     }
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
 
     emailjs
       .sendForm(
@@ -40,7 +45,7 @@ export default function Contact() {
               <br />
                 <span>Обсудим интересный проект </span>
               </p>
-            <form ref={form} onSubmit={sendEmail} class="contact-form">
+            <form  ref={form} onSubmit={sendEmail} class="contact-form">
               <div class="first-row">
                 <input type="text" name="name" placeholder="Имя" />
               </div>
@@ -50,6 +55,7 @@ export default function Contact() {
               <div className="mail_text">{text}</div>
               <div class="third-row">
                 <textarea
+                  
                   on
                   name="message"
                   id=""

@@ -43,16 +43,16 @@ export default function Contact() {
         <div class="content">
           <div class="contact-right">
             <p>
-              Напишите мне
+              {t("write")}
               <br />
-                <span>Обсудим интересный проект </span>
+                <span>{t("projects")} </span>
               </p>
             <form  ref={form} onSubmit={sendEmail} class="contact-form">
               <div class="first-row">
-                <input type="text" name="name" placeholder="Имя" />
+                <input type="text" name="name" placeholder={t("name_form")} />
               </div>
               <div class="second-row">
-                <input type="email" name="email" placeholder="Почта" />
+                <input type="email" name="email" placeholder={t("email_form")} />
               </div>
               <div className="mail_text">{text}</div>
               <div class="third-row">
@@ -62,11 +62,11 @@ export default function Contact() {
                   name="message"
                   id=""
                   rows="7"
-                  placeholder="Сообщение"
+                  placeholder={t("message_form")}
                 ></textarea>
               </div>
               <button onClick={mail} class="btn" type="submit">
-                Отправить<i class="fas fa-paper-plane"></i>
+                {t("send")}<i class="fas fa-paper-plane"></i>
               </button>
             </form>
           </div>

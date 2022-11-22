@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import { useTranslation } from 'react-i18next';
+
 
 import rowing from './rowing.jpg';
 import number from './number.jpg';
@@ -9,6 +11,7 @@ import test2 from './test2.png';
 import newport from './newport.png';
 
 export default function Webport(){
+    const {t} = useTranslation()
     const [modalActive, setModalactive] = useState(false)
     const [modalActive1, setModalactive1] = useState(false)
     const [modalActive2, setModalactive2] = useState(false)
@@ -51,7 +54,7 @@ export default function Webport(){
                                     <div  onClick={clickModal} className="img-card">
                                         <div  className="overlay"></div>
                                         <div className="info">
-                                            <h3 >Сайт про греблю</h3>
+                                            <h3 >{t("site_row")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
@@ -63,17 +66,17 @@ export default function Webport(){
                                     <div  className={modalActive ? 'portfolio-model flex-center active' : 'portfolio-model'}>
                                         <div onClick={clickModal}  className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Сайт про греблю</h3>
+                                            <h3>{t("site_row")}</h3>
                                             <img src={rowing} alt=""/>
-                                            <p>Первый сделанный сайт. Небольшой блог про греблю</p>
+                                            <p>{t("blog_row")}</p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://aleksandr232.github.io/rowingtatarstan.io/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/rowingtatarstan.io" className="btn" target="_blank">Код</a>    
+                                                <a href="https://aleksandr232.github.io/rowingtatarstan.io/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/rowingtatarstan.io" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -82,7 +85,7 @@ export default function Webport(){
                                     <div onClick={clickModal1}  className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Счетчик</h3>
+                                            <h3>{t("counter")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
@@ -95,9 +98,9 @@ export default function Webport(){
                                     <div  className={modalActive1 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
                                         <div  onClick={clickModal1}   className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Счетчик</h3>
+                                            <h3>{t("counter")}</h3>
                                             <img src={number} alt=""/>
-                                            <p>Веб-приложение, где просто добавляешь или убераешь число. Показывает как работает состояние в React  </p>
+                                            <p>{t("web_app")} </p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
@@ -105,8 +108,8 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://number-io.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/number.io" className="btn" target="_blank">Код</a>    
+                                                <a href="https://number-io.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/number.io" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +133,7 @@ export default function Webport(){
                                             <i className="fas fa-times portfolio-close-btn"></i>
                                             <h3>Todo list</h3>
                                             <img src={todo} alt=""/>
-                                            <p>Простенькое веб-приложение, добовление и удаления элементов из сосотяния  </p>
+                                            <p>{t("todo")} </p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
@@ -138,8 +141,8 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://aleksandr232.github.io/add-employees.io/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/add-employees.io" className="btn" target="_blank">Код</a>    
+                                                <a href="https://aleksandr232.github.io/add-employees.io/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/add-employees.io" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +151,7 @@ export default function Webport(){
                                     <div onClick={clickModal3} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Строе портфолио</h3>
+                                            <h3>{t("old_port")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -162,9 +165,9 @@ export default function Webport(){
                                     <div className={modalActive3 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
                                         <div onClick={clickModal3} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Строе портфолио</h3>
+                                            <h3>{t("old_port")}</h3>
                                             <img src={oldport} alt=""/>
-                                            <p>Мое старое портфолио, где есть еще другие работы</p>
+                                            <p>{t("old")}</p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -173,8 +176,8 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/meportfolio" className="btn" target="_blank">Код</a>    
+                                                <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/meportfolio" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -184,7 +187,7 @@ export default function Webport(){
                                     <div onClick={clickModal4} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Тестовое задание</h3>
+                                            <h3>{t("test")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -197,9 +200,9 @@ export default function Webport(){
                                     <div className={modalActive4 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
                                         <div onClick={clickModal4}   className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Тестовое задание</h3>
+                                            <h3>{t("test")}</h3>
                                             <img src={test1} alt=""/>
-                                            <p>Тестовое задание, где нужно было сделать верстку и интегрировать API </p>
+                                            <p>{t("test_work")} </p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -207,8 +210,8 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://testreact-cyan.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/testreact" className="btn" target="_blank">Код</a>    
+                                                <a href="https://testreact-cyan.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/testreact" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -217,7 +220,7 @@ export default function Webport(){
                                     <div onClick={clickModal5} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Тестовое задание</h3>
+                                            <h3>{t("test")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -231,9 +234,9 @@ export default function Webport(){
                                     <div className={modalActive5 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
                                         <div onClick={clickModal5} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Тестовое задание</h3>
+                                            <h3>{t("test")}</h3>
                                             <img src={test2}  alt=""/>
-                                            <p>Тестовое задание, где нужно было сохранять состояние. Использовал Redux</p>
+                                            <p>{t("test_redux")}</p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -242,8 +245,8 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://test-fin.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/test_fin" className="btn" target="_blank">Код</a>    
+                                                <a href="https://test-fin.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/test_fin" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>
@@ -252,7 +255,7 @@ export default function Webport(){
                                     <div onClick={clickModal6} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>Новое портфолио</h3>
+                                            <h3>{t("new_port")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -267,9 +270,9 @@ export default function Webport(){
                                     <div className={modalActive6 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
                                         <div onClick={clickModal6} className="portfolio-model-body">
                                             <i className="fas fa-times portfolio-close-btn"></i>
-                                            <h3>Новое портфолио</h3>
+                                            <h3>{t("new_port")}</h3>
                                             <img src={newport} alt=""/>
-                                            <p>В новым портфолио представлен более современный дизайн.</p>
+                                            <p>{t("new")}</p>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"/>
@@ -279,8 +282,8 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">Посмотреть</a>
-                                                <a href="https://github.com/Aleksandr232/newportfolio" className="btn" target="_blank">Код</a>    
+                                                <a href="https://meportfolio.vercel.app/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                <a href="https://github.com/Aleksandr232/newportfolio" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>

@@ -64,6 +64,27 @@
     left: 20px;
 }
 
+
+#lang_ru .ru{
+    display: contents;
+   text-align: center;
+    width: 20px;
+     visibility: hidden; 
+    
+}
+
+
+
+#lang_en .en{
+    display: contents;
+   text-align: center;
+    width: 20px;
+     visibility: hidden; 
+    
+}
+
+
+
 .dark-theme .a_color_theme{
     color: dodgerblue;
 }

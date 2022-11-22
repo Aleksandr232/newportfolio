@@ -18,36 +18,31 @@ export default function About() {
             <div className="about-info">
               <div className="description">
                 <h4>
-                  Я <span>Frontend-разработчик</span> из{" "}
-                  <span>Казани , Россия</span>
+                  {t("me")} <span>{t("front")}</span> {t("based")}{" "}
+                  <span>{t("from")}</span>
                 </h4>
                 <p>
-                  Для меня программирование - новая сфера деятельности. Однако
-                  для меня это та стезя, которая вдохновляет и мотивирует на
-                  развитие. Я начал свой путь с прохождения курсов на Udemy.
-                  Считаю, что для достижения даже небольшого результата, нужно
-                  потратить неопределенное количество часов и успех явно придет,
-                  главное любить этим заниматься.
+                  {t("proger")}
                 </p>
               </div>
               <ul className="professional-list">
                 <li className="list-item">
                   <h3>1+</h3>
                   <span>
-                    Год
+                    {t("year")}
                     <br />
-                    Обучения
+                    {t("lear")}
                   </span>
                 </li>
                 <li className="list-item">
                   <h3>1+</h3>
-                  <span>Язык программирования</span>
+                  <span>{t("prog_lang")}</span>
                 </li>
                 <li className="list-item">
                   <h3>∞</h3>
                   <span>
-                    Желания <br />
-                    учится
+                    {t("des")} <br />
+                    {t("learns")}
                   </span>
                 </li>
               </ul>
@@ -57,7 +52,7 @@ export default function About() {
                 target="_blank"
                
               >
-                Скачать CV <i className="fas fa-download"></i>
+                {t("download")} CV <i className="fas fa-download"></i>
               </a>
             </div>
           </div>

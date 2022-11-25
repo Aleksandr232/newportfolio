@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { useTranslation } from 'react-i18next';
 
+import sucses from './sucses.png';
+
 export default function Contact() {
     const { t } = useTranslation();
     const [text, setText] = useState('');
@@ -29,10 +31,11 @@ export default function Contact() {
       setEmail(e.target.value)
       const re =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
       if (!re.test(String(e.target.value).toLocaleLowerCase())){
-          setEmailError1('Некорректный email')
+          setEmailError1((t('valid')))
            
       }else{
-          setEmailError1('')
+         setEmailError1((<img style={{width: 20, position:'absolute', left: -228}} src={sucses}/>))
+         
           
       }
   }

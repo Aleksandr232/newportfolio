@@ -56,5 +56,6 @@
     "btn_look":"Look",
     "btn_code":"Code",
     "new_port": "New portfolio",
-    "new":"The new portfolio features a more contemporary design."
+    "new":"The new portfolio features a more contemporary design.",
+    "valid":"incorrect emai"
 }

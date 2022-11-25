@@ -1,13 +1,15 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export const useTheme=()=>{
     const [theme, setTheme] = useState('light')
 
-    useLayoutEffect(()=>{
+    useEffect(()=>{
         document.documentElement.setAttribute('class', theme)
     }, [theme])
 
     return {theme, setTheme}
+
+   
 }
 

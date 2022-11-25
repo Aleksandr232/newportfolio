@@ -26,6 +26,7 @@ export default function Nav(){
 
     const ThemeClick=()=>{
        theme === 'light' ? setTheme('dark-theme') : setTheme('light')   
+       console.log("тема", theme)
     }
 
     const changeLanguage = (language) => {
@@ -33,6 +34,7 @@ export default function Nav(){
 
         lang === 'ru'  ? setLang('en' ) : setLang('ru')
         img === 'lang_ru' ? setImg('lang_en') : setImg('lang_ru')
+        console.log("язык", lang)
       };
   
    

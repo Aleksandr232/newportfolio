@@ -3,26 +3,34 @@ import emailjs from "emailjs-com";
 import { useTranslation } from 'react-i18next';
 
 import sucses from './sucses.png';
+import error from './error.png'
 
 export default function Contact() {
     const { t } = useTranslation();
     const [text, setText] = useState('');
     const [email, setEmail] = useState();
+    const [name, setName] = useState()
+    const [message, setMessage] = useState()
     const [emailError1, setEmailError1] = useState();
+    const [nameError, setNameError] = useState();
     const [emailE, setEmailE] = useState(false)
-
+    const [nameDirty, setNamedirty] = useState(false)
     
 
-    const mail=()=>{
-        setText((t('success')))
-        
-    }
+    const mail=(e)=>{
+      setText((t('success')))
+    }  
+    
+    
 
     const blurHandler = (e) =>{
       // eslint-disable-next-line default-case
       switch (e.target.name) {
-       case 'email':
+        case 'email':
           setEmailE(true)
+          break;
+        case 'name':
+          setNamedirty(true)
           break
       }
   }
@@ -39,10 +47,23 @@ export default function Contact() {
           
       }
   }
+
+  const nameHandler = (e) =>{
+    setName(e.target.value)
+    const re = /^[a-zA-Z]+$/ ;
+    if (!re.test(String(e.target.value).toLocaleLowerCase())){
+        setNameError((<img style={{width: 20, position:'absolute', right:-364, bottom: 50}} src={error}/>))
+         
+    }else{
+       setNameError((<img style={{width: 20, position:'absolute', right:-364, bottom: 50}} src={sucses}/>))
+       
+        
+    }
+}
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+   /*  e.preventDefault(); */
     
 
     emailjs
@@ -75,7 +96,8 @@ export default function Contact() {
               </p>
             <form  ref={form} onSubmit={sendEmail} class="contact-form">
               <div class="first-row">
-                <input type="text" name="name" placeholder={t("name_form")} />
+                <input onChange={nameHandler} onBlur={e => blurHandler(e)} type="text" name="name" placeholder={t("name_form")} />
+                {(nameError && nameDirty  )  && <div style={{position:"relative", right: 329, color:'red'}}>{nameError}</div>}
               </div>
               <div class="second-row">
                 <input onChange={emailHandler} onBlur={e => blurHandler(e)}  type="email" name="email" placeholder={t("email_form")} />

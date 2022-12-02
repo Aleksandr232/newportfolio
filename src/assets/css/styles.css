@@ -1536,4 +1536,15 @@ footer a {
         font-size: 0.8rem;
     }
 
+    .staus_light{
+        position: relative;
+        left: -9px;
+    }
+
+    .staus_dark{
+        position: relative;
+        left: -9px;
+    }
+
+
 }

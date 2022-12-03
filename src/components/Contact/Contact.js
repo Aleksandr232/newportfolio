@@ -39,7 +39,7 @@ export default function Contact() {
       setEmail(e.target.value)
       const re =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
       if (!re.test(String(e.target.value).toLocaleLowerCase())){
-          setEmailError1(t('valid'))
+          setEmailError1((<img className="error1" src={error}/>))
            
       }else{
          setEmailError1((<img className="error1" src={sucses}/>))

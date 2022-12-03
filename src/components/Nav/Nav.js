@@ -70,7 +70,7 @@ export default function Nav(){
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">{t("nav_about")}</Link>
                           <Link onClick={()=>setMenuactive(prev=>!prev)} to="/skills">{t("nav_skills")}</Link>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/portfolio">{t("nav_portfolio")}</Link>
-                        <Link to="/contact">{t("nav_contact")}</Link>
+                        <Link onClick={()=>setMenuactive(prev=>!prev)} to="/contact">{t("nav_contact")}</Link>
                     </div>
                 </div>
                 <div onClick={()=>setMenuactive(prev=>!prev)}   className="nav-menu-btn"></div>

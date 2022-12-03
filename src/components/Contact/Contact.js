@@ -39,10 +39,10 @@ export default function Contact() {
       setEmail(e.target.value)
       const re =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
       if (!re.test(String(e.target.value).toLocaleLowerCase())){
-          setEmailError1((t('valid')))
+          setEmailError1(t('valid'))
            
       }else{
-         setEmailError1((<img style={{width: 20, position:'absolute', left: -228}} src={sucses}/>))
+         setEmailError1((<img className="error1" src={sucses}/>))
          
           
       }
@@ -52,10 +52,10 @@ export default function Contact() {
     setName(e.target.value)
     const re = /^[a-zA-Z]+$/ ;
     if (!re.test(String(e.target.value).toLocaleLowerCase())){
-        setNameError((<img style={{width: 20, position:'absolute', right:-364, bottom: 50}} src={error}/>))
+        setNameError((<img className="error" src={error}/>))
          
     }else{
-       setNameError((<img style={{width: 20, position:'absolute', right:-364, bottom: 50}} src={sucses}/>))
+       setNameError((<img className="error" src={sucses}/>))
        
         
     }
@@ -101,7 +101,7 @@ export default function Contact() {
               </div>
               <div class="second-row">
                 <input onChange={emailHandler} onBlur={e => blurHandler(e)}  type="email" name="email" placeholder={t("email_form")} />
-                {(emailError1 && emailE  )  && <div style={{position:"relative", right: 329,  top:20, color:'red'}}>{emailError1}</div>}
+                {(emailError1 && emailE  )  && <div className="error_mail">{emailError1}</div>}
               </div>
               <div className="mail_text">{text}</div>
               <div class="third-row">

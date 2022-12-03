@@ -114,6 +114,12 @@
     left: 20px;
 }
  
+.error_mail{
+    position: relative;
+    right: 329px;
+    top:20px;
+    color:red
+}
 
 *{
     margin: 0;
@@ -307,6 +313,18 @@ header.sticky .nav-bar {
     right: 215px;
 }
 
+.error1{
+    width: 20px;
+    position: absolute;
+    right: 209px;
+    bottom: 67px;
+}
+.error{
+    width: 20px;
+    position: absolute;
+    right: -364px;
+    bottom: 50px;
+}
 .nav-items a {
     color: var(--first-color);
     font-size: var(--normal-font-size);
@@ -1539,6 +1557,28 @@ footer a {
     .staus_light{
         position: relative;
         left: -9px;
+    }
+
+    .error{
+        width: 20px;
+        position: absolute;
+        right: -351px;
+        bottom: 50px;
+    }
+
+    .error1{
+        width: 20px;
+        position: absolute;
+        right: 239px;
+        bottom: -27px;
+    }
+    
+      
+    .error_mail{
+        position: relative;
+        right: -263px;
+        top: -78px;
+        color: red;
     }
 
     .staus_dark{

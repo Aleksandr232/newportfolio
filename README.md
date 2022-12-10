@@ -1,1 +1,1 @@
- - Here is a template of a portfolio page built using React, React Router and Sass (SCSS). Feel free to use this template for your personal portfolio.
+ - Here is a template of a portfolio page built using TS, JS,  React, React Router and CSS / (SCSS). Feel free to use this template for your personal portfolio.

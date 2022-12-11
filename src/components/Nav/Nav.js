@@ -29,19 +29,8 @@ export default function Nav(){
     const { coords } =
     useGeolocated({
         positionOptions: {
-            positionOptions: {
-                enableHighAccuracy: true,
-                maximumAge: 0,
-                timeout: Infinity,
-            },
-            watchPosition: true,
-            userDecisionTimeout: null,
-            suppressLocationOnMount: true,
-            geolocationProvider: navigator.geolocation,
-            isOptimisticGeolocationEnabled: true,
-        },
-        userDecisionTimeout: 1000,
-        
+            enableHighAccuracy: false,
+        }   
     });
         
     

@@ -27,7 +27,7 @@ export default function Nav(){
     const [menuActive, setMenuactive] = useState(false)
    
     const { coords } =
-    window.onload = useGeolocated({
+    useGeolocated({
         positionOptions: {
             positionOptions: {
                 enableHighAccuracy: true,

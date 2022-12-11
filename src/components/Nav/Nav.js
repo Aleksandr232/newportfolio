@@ -36,14 +36,14 @@ export default function Nav(){
     
    
     
-    window.onload = function (){
+    window.addEventListener('load', function(){
         return fetch(`${api.base}weather?lon=${coords.longitude}&lat=${coords.latitude}&units=metric&appid=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);
              console.log(result);
            });
-    }
+    })
     
 
     const ThemeClick=()=>{

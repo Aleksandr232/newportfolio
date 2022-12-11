@@ -1,6 +1,7 @@
 import React,{useState, useLayoutEffect} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
+import { useGeolocated } from "react-geolocated"
 import { useTheme} from "../../hooks/useTheme";
 import { useLang } from "../../hooks/useLang";
 import { useTranslation } from 'react-i18next';
@@ -23,10 +24,19 @@ export default function Nav(){
     const {lang, setLang, img, setImg} = useLang()
     const [menuActive, setMenuactive] = useState(false)
    
+    const { coords } =
+    useGeolocated({
+        positionOptions: {
+            enableHighAccuracy: true,
+        },
+        userDecisionTimeout: 5000,
+        
+    });
+
    
     
     window.onload = function (){
-        return fetch(`${api.base}weather?q=kazan&units=metric&APPID=${api.key}`)
+        return fetch(`${api.base}weather?lon=${coords?.longitude}&lat=${coords?.latitude}&appid=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);
@@ -79,7 +89,7 @@ export default function Nav(){
                 <a href="https://github.com/Aleksandr232" className="dev"><img style={{width:190, left: 20}} src={dev} alt="" /></a>
                 <a href="https://github.com/Aleksandr232" className="dev1"><img style={{width:190, left: 20}} src={dev1} alt="" /></a>
                  <div className = {menuActive  ? 'navigation active' : 'navigation'}>
-                    <div className="nav-items">
+                    <div className="nav-items"> 
                         <div onClick={()=>setMenuactive(prev=>!prev)} className="nav-close-btn"></div>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/" >{t("nav_home")}</Link>
                         <Link onClick={()=>setMenuactive(prev=>!prev)} to="/about">{t("nav_about")}</Link>

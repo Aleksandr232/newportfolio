@@ -1,1 +1,7 @@
- - Here is a template of a portfolio page built using TS, JS,  React, React Router and CSS / (SCSS). Feel free to use this template for your personal portfolio.
+<h1>>Портфолио для разработчика</h1
+
+- Стек технологий: JS, TS, React, CSS / SCSS, 
+
+<h2>Вы можете скачать zip архив либо подключиться к вилке</h2>
+
+- Что бы его запустить npm start

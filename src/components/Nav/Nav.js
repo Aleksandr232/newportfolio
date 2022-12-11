@@ -16,6 +16,8 @@ const api = {
     base: "https://api.openweathermap.org/data/2.5/"
   }
 
+  
+
 
 export default function Nav(){
     const {t,  i18n } = useTranslation()
@@ -27,16 +29,27 @@ export default function Nav(){
     const { coords } =
     useGeolocated({
         positionOptions: {
-            enableHighAccuracy: true,
+            positionOptions: {
+                enableHighAccuracy: true,
+                maximumAge: 0,
+                timeout: Infinity,
+            },
+            watchPosition: true,
+            userDecisionTimeout: null,
+            suppressLocationOnMount: true,
+            geolocationProvider: navigator.geolocation,
+            isOptimisticGeolocationEnabled: true,
         },
         userDecisionTimeout: 5000,
         
     });
-
+        const lon = coords?.longitude
+        const lat = coords?.latitude
+    
    
     
     window.onload = function (){
-        return fetch(`${api.base}weather?lon=${coords?.longitude}&lat=${coords?.latitude}&appid=${api.key}`)
+        return fetch(`${api.base}weather?lon=${lon}&lat=${lat}&units=metric&appid=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);

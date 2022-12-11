@@ -27,7 +27,7 @@ export default function Nav(){
     const [menuActive, setMenuactive] = useState(false)
    
     const { coords } =
-    useGeolocated({
+    window.onload = useGeolocated({
         positionOptions: {
             positionOptions: {
                 enableHighAccuracy: true,
@@ -40,7 +40,7 @@ export default function Nav(){
             geolocationProvider: navigator.geolocation,
             isOptimisticGeolocationEnabled: true,
         },
-        userDecisionTimeout: 5000,
+        userDecisionTimeout: 1000,
         
     });
         

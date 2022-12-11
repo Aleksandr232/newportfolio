@@ -1,4 +1,4 @@
-import React,{useState, useLayoutEffect} from "react";
+import React,{useState} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
 import { useGeolocated } from "react-geolocated"

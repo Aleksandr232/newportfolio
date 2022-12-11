@@ -10,18 +10,29 @@ import moon from './moon.png'
 import dev from './dev.png'
 import dev1 from './dev1.png'
 
-
+const api = {
+    key: "af3904bcfb9954b533100c6413793863",
+    base: "https://api.openweathermap.org/data/2.5/"
+  }
 
 
 export default function Nav(){
-    const {t,  i18n } = useTranslation();
+    const {t,  i18n } = useTranslation()
+    const [weather, setWeather] = useState({});
     const {theme, setTheme} = useTheme()
     const {lang, setLang, img, setImg} = useLang()
     const [menuActive, setMenuactive] = useState(false)
    
    
     
-   
+    window.onload = function (){
+        return fetch(`${api.base}weather?q=kazan&units=metric&APPID=${api.key}`)
+           .then(res => res.json())
+           .then(result => {
+             setWeather(result);
+             console.log(result);
+           });
+    }
     
 
     const ThemeClick=()=>{
@@ -48,6 +59,10 @@ export default function Nav(){
         <div onClick={ThemeClick} className="theme-btn flex-center">
             <img className="theme-sun" src={sun} alt="" />
             <img className="theme-moon" src={moon} alt="" />
+        </div>
+
+        <div className="weather flex-center">
+            <div className={(typeof weather.main != "undefined") ? ((weather.main.temp < 0) ? 'wet snow' : 'wet'):''}>{Math.round(weather.main?.temp)}°c</div>
         </div>
 
         <div onClick={() => changeLanguage(lang)} className="language-btn flex-center">

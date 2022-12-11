@@ -221,6 +221,20 @@ li {
     cursor: pointer;
 }
 
+.weather{
+    z-index: 99999;
+    position: fixed;
+    right: 0;
+    top: 213px;
+    background: #6a59d1;
+    backdrop-filter: blur(20px);
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--box-shadow);
+}
+
 .language-btn{
     z-index: 99999;
     position: fixed;
@@ -243,6 +257,18 @@ li {
 .theme-btn.sun .fa-sun {
     display: block;
 }
+
+.wet.snow{
+    background: url('https://www.beesona.ru/upload/769/c9f8ce3d9bdefa452a34a1928ab645a1.gif');
+    opacity: 0.8;
+}
+
+.wet{
+    /* background: url('https://i.gifer.com/origin/a4/a4d37926faf85767456e848b3f950f4e.gif'); */
+    opacity: 0.8;
+}
+
+
 
 /*========== Scroll bar ====================*/
 ::-webkit-scrollbar {

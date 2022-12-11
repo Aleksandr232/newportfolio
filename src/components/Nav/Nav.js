@@ -43,13 +43,12 @@ export default function Nav(){
         userDecisionTimeout: 5000,
         
     });
-        const lon = coords?.longitude
-        const lat = coords?.latitude
+        
     
    
     
     window.onload = function (){
-        return fetch(`${api.base}weather?lon=${lon}&lat=${lat}&units=metric&appid=${api.key}`)
+        return fetch(`${api.base}weather?lon=${coords.longitude}&lat=${coords.latitude}&units=metric&appid=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);

@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React,{useState} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
 import { useGeolocated}  from "react-geolocated"
@@ -35,11 +35,6 @@ export default function Nav(){
         })  
   
 
-        
-        useEffect(()=>{
-          
-        },[coords])
-    
         
     
      

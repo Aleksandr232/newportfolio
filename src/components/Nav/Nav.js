@@ -28,14 +28,14 @@ export default function Nav(){
    
     
         
-          const { coords}  = useGeolocated({
-            positionOptions: {
-                enableHighAccuracy: true,
-            }   
-        })  
-  
+         
+    const {coords}  = useGeolocated({
+        positionOptions: {
+            enableHighAccuracy: true,
+        }   
+    }) 
 
-        
+     
     
      
     window.addEventListener('load', function(){
@@ -67,8 +67,6 @@ export default function Nav(){
 
     return(
        <>
-
-
         <div onClick={ThemeClick} className="theme-btn flex-center">
             <img className="theme-sun" src={sun} alt="" />
             <img className="theme-moon" src={moon} alt="" />

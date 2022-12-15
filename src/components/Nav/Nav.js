@@ -21,7 +21,7 @@ const api = {
 
 export default function Nav(){
     const {t,  i18n } = useTranslation()
-    const [weather, setWeather] = useState({});
+   /*  const [weather, setWeather] = useState({}); */
     const {theme, setTheme} = useTheme()
     const {lang, setLang, img, setImg} = useLang()
     const [menuActive, setMenuactive] = useState(false)
@@ -38,7 +38,7 @@ export default function Nav(){
      
     
      
-    window.onload = function(){
+  /*   window.onload = function(){
           fetch(`${api.base}weather?q=KAZAN&units=metric&APPID=${api.key}`)
            .then(res => res.json())
            .then(result => {
@@ -46,7 +46,7 @@ export default function Nav(){
              console.log(result);
            });
     }
-    
+     */
 
     const ThemeClick=()=>{
        theme === 'light' ? setTheme('dark-theme') : setTheme('light')   
@@ -72,9 +72,9 @@ export default function Nav(){
             <img className="theme-moon" src={moon} alt="" />
         </div>
 
-        <div className="weather flex-center">
+       {/*  <div className="weather flex-center">
             <div className={(typeof weather.main != "undefined") ? ((weather.main?.temp < 0) ? 'wet snow' : 'wet'):''}>{Math.round(weather.main?.temp)}°c</div>
-        </div>
+        </div> */}
 
         <div onClick={() => changeLanguage(lang)} className="language-btn flex-center">
             <svg className="en" id="lang_ru" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" options="[object Object]"><path d="M.667 9.667h14.666V13H.667V9.667Z" fill="#FF3D00"></path><path d="M.667 6.333h14.666v3.334H.667V6.333Z" fill="#3F51B5"></path><path d="M.667 3h14.666v3.333H.667V3Z" fill="#E0E1E2"></path></svg>

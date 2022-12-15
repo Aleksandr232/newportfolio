@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import {Link} from 'react-router-dom'
 import easterBreaker from "easter-break";
-import { useGeolocated}  from "react-geolocated"
+/* import { useGeolocated}  from "react-geolocated" */
 import { useTheme} from "../../hooks/useTheme";
 import { useLang } from "../../hooks/useLang";
 import { useTranslation } from 'react-i18next';
@@ -29,17 +29,17 @@ export default function Nav(){
     
         
          
-    const {coords}  = useGeolocated({
-        positionOptions: {
+   /*  const {coords}  = useGeolocated({
+        positionOptions: {                      \\ геолокация решил отключить 
             enableHighAccuracy: true,
         }   
     }) 
-
+ */
      
     
      
     window.addEventListener('load', function(){
-        return  fetch(`${api.base}weather?lon=${coords.longitude}&lat=${coords.latitude}&units=metric&appid=${api.key}`)
+        return  fetch(`${api.base}weather?q=Kazan&units=metric&appid=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);

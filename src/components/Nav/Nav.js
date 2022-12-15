@@ -12,7 +12,7 @@ import dev from './dev.png'
 import dev1 from './dev1.png'
 
 const api = {
-    key: "af3904bcfb9954b533100c6413793863",
+    key: "8a085358b791086e772cc5b1ff8c636a",
     base: "https://api.openweathermap.org/data/2.5/"
   }
 

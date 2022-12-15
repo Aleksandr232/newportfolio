@@ -73,7 +73,7 @@ export default function Nav(){
         </div>
 
         <div className="weather flex-center">
-            <div className={(typeof weather.main != "undefined") ? ((weather.main.temp < 0) ? 'wet snow' : 'wet'):''}>{Math.round(weather.main?.temp)}°c</div>
+            <div className={(typeof weather.main != "undefined") ? ((weather.main?.temp < 0) ? 'wet snow' : 'wet'):''}>{Math.round(weather.main?.temp)}°c</div>
         </div>
 
         <div onClick={() => changeLanguage(lang)} className="language-btn flex-center">

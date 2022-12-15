@@ -38,14 +38,14 @@ export default function Nav(){
      
     
      
-    window.addEventListener('load', function(){
+    window.onload = function(){
         return  fetch(`${api.base}weather?q=Kazan&units=metric&appid=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);
              console.log(result);
            });
-    })
+    }
     
 
     const ThemeClick=()=>{

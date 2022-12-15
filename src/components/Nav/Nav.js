@@ -39,7 +39,7 @@ export default function Nav(){
     
      
     window.onload = function(){
-        return  fetch(`${api.base}weather?q=Kazan&units=metric&appid=${api.key}`)
+        return  fetch(`${api.base}weather?q=KAZAN&units=metric&APPID=${api.key}`)
            .then(res => res.json())
            .then(result => {
              setWeather(result);

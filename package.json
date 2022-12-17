@@ -16,6 +16,7 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "axios": "^1.2.1",
     "classnames": "^2.3.2",
     "easter-break": "^1.5.1",
     "emailjs": "^4.0.1",

@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import React, {useState } from "react";
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 import sucses from './sucses.png';
 import error from './error.png'
@@ -17,9 +17,7 @@ export default function Contact() {
     const [nameDirty, setNamedirty] = useState(false)
     
 
-    const mail=(e)=>{
-      setText((t('success')))
-    }  
+  
     
     
 
@@ -60,26 +58,41 @@ export default function Contact() {
         
     }
 }
-  const form = useRef();
+  
+const TOKEN ='5784348887:AAEf498gjGd0gXuH6nfJC3KpjV_w1lWsot4';
+const CHAT_ID = '-1001803523687';
+const uri_api = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const sendEmail = (e) => {
-   /*  e.preventDefault(); */
-    
+    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_lpyejlf",
-        "template_dxsb78r",
-        e.target,
-        "U-vJA2UpFX4L5tNTY"
-      ).then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    axios.post(uri_api,{
+      chat_id: CHAT_ID,
+      parse_mode: 'HTML',
+      text:`<b>Заявка</b> 
+      <b>Отправитель: ${name}</b>
+      <b>Почта: ${email}</b>
+      <b>Cообщение: ${message}</b>
+      `
+      
+  })
+  .then((res)=>{
+      setName(e.target.value='')
+      setEmail(e.target.value='')
+      setMessage(e.target.value='')
+      setText((t('success')))
+      setEmailError1(false)
+      setNameError(false) 
+
+  })
+  .catch((err)=>{
+      console.log(err)
+  })
+  .finally(()=>{
+
+  })
+
+    
   };
 
   return (
@@ -94,19 +107,20 @@ export default function Contact() {
               <br />
                 <span>{t("projects")} </span>
               </p>
-            <form  ref={form} onSubmit={sendEmail} class="contact-form">
+            <form   onSubmit={sendEmail} class="contact-form">
               <div class="first-row">
-                <input onChange={nameHandler} onBlur={e => blurHandler(e)} type="text" name="name" placeholder={t("name_form")} />
+                <input onChange={nameHandler} onBlur={e => blurHandler(e)} value={name} type="text" name="name" placeholder={t("name_form")} />
                 {(nameError && nameDirty  )  && <div style={{position:"relative", right: 329, color:'red'}}>{nameError}</div>}
               </div>
               <div class="second-row">
-                <input onChange={emailHandler} onBlur={e => blurHandler(e)}  type="email" name="email" placeholder={t("email_form")} />
+                <input onChange={emailHandler} onBlur={e => blurHandler(e)} value={email}  type="email" name="email" placeholder={t("email_form")} />
                 {(emailError1 && emailE  )  && <div className="error_mail">{emailError1}</div>}
               </div>
               <div className="mail_text">{text}</div>
               <div class="third-row">
                 <textarea
-                  
+                  onChange={(e)=>setMessage(e.target.value)}
+                  value={message}
                   on
                   name="message"
                   id=""
@@ -114,7 +128,7 @@ export default function Contact() {
                   placeholder={t("message_form")}
                 ></textarea>
               </div>
-              <button onClick={mail} class="btn" type="submit">
+              <button class="btn" type="submit">
                 {t("send")}<i class="fas fa-paper-plane"></i>
               </button>
             </form>

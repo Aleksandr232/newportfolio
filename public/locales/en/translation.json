@@ -57,5 +57,7 @@
     "btn_code":"Code",
     "new_port": "New portfolio",
     "new":"The new portfolio features a more contemporary design.",
-    "valid":"incorrect emai"
+    "valid":"incorrect emai",
+    "arenda" : "Hire Heights",
+    "arenda_desc": "Finalizing the site and creating a calculator on ReactJs"
 }

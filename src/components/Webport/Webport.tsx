@@ -304,7 +304,7 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
-                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                                
                                             </span>
                                         </div>
                                         <img src={arenda} style={{width:595}} alt=""/>
@@ -320,7 +320,7 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
-                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                                
                                             </span>
                                             <div className="portfolio-btns">
                                                 <a href="https://xn--80aagge2ckkol0hd.xn--p1ai/" className="btn" target="_blank">{t("btn_look")}</a>

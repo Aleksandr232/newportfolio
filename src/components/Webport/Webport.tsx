@@ -324,7 +324,7 @@ export default function Webport(){
                                             </span>
                                             <div className="portfolio-btns">
                                                 <a href="https://xn--80aagge2ckkol0hd.xn--p1ai/" className="btn" target="_blank">{t("btn_look")}</a>
-                                                <a href="https://github.com/Aleksandr232/arenadaVsoti" className="btn" target="_blank">{t("btn_code")}</a>    
+                                                <a href="https://github.com/Aleksandr232/arendavisoti_laravel" className="btn" target="_blank">{t("btn_code")}</a>    
                                             </div>
                                         </div>
                                     </div>

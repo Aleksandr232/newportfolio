@@ -56,7 +56,7 @@ export default function Skills(){
                     <div className="skills-description">
                         <h3>{t("work")}</h3>
                     </div>
-                    <div className="skills-info">
+                    {/* <div className="skills-info">
                         <div className="experience-card">
                             <div className="upper">
                                 <h3>{t("climber")}</h3>
@@ -79,7 +79,7 @@ export default function Skills(){
                             <p>{t("workme")}  <a className="a_color_theme"   href="https://t.me/HireHeightsbot">{t("bot")}</a>
                                  </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         

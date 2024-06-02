@@ -339,7 +339,7 @@ export default function Webport(){
                                     <div onClick={clickModal8} className="img-card">
                                         <div className="overlay"></div>
                                         <div className="info">
-                                            <h3>{t("arenda")}</h3>
+                                            <h3>{t("ritual")}</h3>
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>

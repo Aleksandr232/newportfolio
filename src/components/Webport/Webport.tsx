@@ -347,7 +347,7 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
-                                                <img style={{width:30}} src="https://camo.githubusercontent.com/a13ca5b988ada41…3746d616e2f676574706f73746d616e2d69636f6e2e737667" />
+                                                <img style={{width:30}} src="https://www.svgrepo.com/show/378440/nextjs-fill.svg" />
                                                 <img style={{width:30}} src="https://www.svgrepo.com/show/353985/laravel.svg" />
                                             </span>
                                         </div>
@@ -366,7 +366,7 @@ export default function Webport(){
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
-                                                <img style={{width:30}} src="https://camo.githubusercontent.com/a13ca5b988ada41…3746d616e2f676574706f73746d616e2d69636f6e2e737667" />
+                                                <img style={{width:30}} src="https://www.svgrepo.com/show/378440/nextjs-fill.svg" />
                                                 <img style={{width:30}} src="https://www.svgrepo.com/show/353985/laravel.svg" />
                                             </span>
                                             <div className="portfolio-btns">

@@ -343,9 +343,12 @@ export default function Webport(){
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
-                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
-                                                
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
+                                                <img style={{width:30}} src="https://camo.githubusercontent.com/a13ca5b988ada41…3746d616e2f676574706f73746d616e2d69636f6e2e737667" />
+                                                <img style={{width:30}} src="https://www.svgrepo.com/show/353985/laravel.svg" />
                                             </span>
                                         </div>
                                         <img src={ritual} style={{width:595}} alt=""/>
@@ -359,13 +362,15 @@ export default function Webport(){
                                             <span>
                                                 <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
-                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
                                                 <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
-                                                
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" />
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" />
+                                                <img style={{width:30}} src="https://camo.githubusercontent.com/a13ca5b988ada41…3746d616e2f676574706f73746d616e2d69636f6e2e737667" />
+                                                <img style={{width:30}} src="https://www.svgrepo.com/show/353985/laravel.svg" />
                                             </span>
                                             <div className="portfolio-btns">
-                                                <a href="https://www.ritualcompass.com/" className="btn" target="_blank">{t("btn_look")}</a>
-                                                {/* <a href="" className="btn" target="_blank">{t("btn_code")}</a>  */}   
+                                                <a href="https://www.ritualcompass.com/" className="btn" target="_blank">{t("btn_look")}</a>  
                                             </div>
                                         </div>
                                     </div>

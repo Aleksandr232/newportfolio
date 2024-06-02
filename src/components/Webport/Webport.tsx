@@ -10,6 +10,7 @@ import test1 from './test1.png';
 import test2 from './test2.png';
 import newport from './newport.png';
 import arenda from './arendaVsoti.png';
+import ritual from './ritualcompass.png';
 
 export default function Webport(){
     const {t} = useTranslation()
@@ -21,6 +22,7 @@ export default function Webport(){
     const [modalActive5, setModalactive5] = useState(false)
     const [modalActive6, setModalactive6] = useState(false)
     const [modalActive7, setModalactive7] = useState(false)
+    const [modalActive8, setModalactive8] = useState(false)
 
     const clickModal=()=>{
         setModalactive(prev=>!prev)
@@ -51,6 +53,10 @@ export default function Webport(){
 
     const clickModal7=()=>{
         setModalactive7(prev=>!prev)
+    }
+
+    const clickModal8=()=>{
+        setModalactive8(prev=>!prev)
     }
 
     return(
@@ -325,6 +331,41 @@ export default function Webport(){
                                             <div className="portfolio-btns">
                                                 <a href="https://xn--80aagge2ckkol0hd.xn--p1ai/" className="btn" target="_blank">{t("btn_look")}</a>
                                                 <a href="https://github.com/Aleksandr232/arendavisoti_laravel" className="btn" target="_blank">{t("btn_code")}</a>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="img-card-container">
+                                    <div onClick={clickModal8} className="img-card">
+                                        <div className="overlay"></div>
+                                        <div className="info">
+                                            <h3>{t("arenda")}</h3>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+                                                
+                                            </span>
+                                        </div>
+                                        <img src={ritual} style={{width:595}} alt=""/>
+                                    </div>
+                                    <div className={modalActive8 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal8} className="portfolio-model-body">
+                                            <i className="fas fa-times portfolio-close-btn"></i>
+                                            <h3>{t("ritual")}</h3>
+                                            <img src={ritual} alt=""/>
+                                            <p>{t("ritual_desc")}</p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+                                                
+                                            </span>
+                                            <div className="portfolio-btns">
+                                                <a href="https://www.ritualcompass.com/" className="btn" target="_blank">{t("btn_look")}</a>
+                                                {/* <a href="" className="btn" target="_blank">{t("btn_code")}</a>  */}   
                                             </div>
                                         </div>
                                     </div>

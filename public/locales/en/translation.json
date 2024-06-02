@@ -59,5 +59,7 @@
     "new":"The new portfolio features a more contemporary design. Also integrated with telegram",
     "valid":"incorrect emai",
     "arenda" : "Hire Heights",
-    "arenda_desc": "Finalizing the site and creating a calculator on ReactJs"
+    "arenda_desc": "Finalizing the site and creating a calculator on ReactJs",
+    "ritual": "RitualCompass",
+    "ritual_desc": "The Ritual Compass is built on a modern technology stack, including Laravel for the backend, Next.js for the frontend, and Vercel for deployment. This setup provides high performance, scalability, and ease of development and operation for the application"
 }

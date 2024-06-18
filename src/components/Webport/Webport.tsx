@@ -11,6 +11,7 @@ import test2 from './test2.png';
 import newport from './newport.png';
 import arenda from './arendaVsoti.png';
 import ritual from './ritualcompass.png';
+import euro from './euro.png';
 
 export default function Webport(){
     const {t} = useTranslation()
@@ -23,6 +24,7 @@ export default function Webport(){
     const [modalActive6, setModalactive6] = useState(false)
     const [modalActive7, setModalactive7] = useState(false)
     const [modalActive8, setModalactive8] = useState(false)
+    const [modalActive9, setModalactive9] = useState(false)
 
     const clickModal=()=>{
         setModalactive(prev=>!prev)
@@ -57,6 +59,10 @@ export default function Webport(){
 
     const clickModal8=()=>{
         setModalactive8(prev=>!prev)
+    }
+
+    const clickModal9=()=>{
+        setModalactive9(prev=>!prev)
     }
 
     return(
@@ -371,6 +377,40 @@ export default function Webport(){
                                             </span>
                                             <div className="portfolio-btns">
                                                 <a href="https://www.ritualcompass.com/" className="btn" target="_blank">{t("btn_look")}</a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="img-card-container">
+                                    <div onClick={clickModal9} className="img-card">
+                                        <div className="overlay"></div>
+                                        <div className="info">
+                                            <h3>{t("euro")}</h3>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+                                                <img style={{width:30}} src="https://www.svgrepo.com/show/353985/laravel.svg" />
+                                            </span>
+                                        </div>
+                                        <img src={euro} style={{width:595}} alt=""/>
+                                    </div>
+                                    <div className={modalActive9 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal9} className="portfolio-model-body">
+                                            <i className="fas fa-times portfolio-close-btn"></i>
+                                            <h3>{t("euro")}</h3>
+                                            <img src={euro} alt=""/>
+                                            <p>{t("euro_desc")}</p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+                                                <img style={{width:30}} src="https://www.svgrepo.com/show/353985/laravel.svg" />
+                                            </span>
+                                            <div className="portfolio-btns">
+                                                <a href="https://premier-euro2024.ru/" className="btn" target="_blank">{t("btn_look")}</a>  
                                             </div>
                                         </div>
                                     </div>

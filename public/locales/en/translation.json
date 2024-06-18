@@ -61,5 +61,7 @@
     "arenda" : "Hire Heights",
     "arenda_desc": "Finalizing the site and creating a calculator on ReactJs",
     "ritual": "RitualCompass",
-    "ritual_desc": "The Ritual Compass is built on a modern technology stack, including Laravel for the backend, Next.js for the frontend, and Vercel for deployment. This setup provides high performance, scalability, and ease of development and operation for the application"
+    "ritual_desc": "The Ritual Compass is built on a modern technology stack, including Laravel for the backend, Next.js for the frontend, and Vercel for deployment. This setup provides high performance, scalability, and ease of development and operation for the application",
+    "euro": "EURO 2024 for the PREMIERE service",
+    "euro_desc" : "As a result of the work done, I have created a reliable and flexible Euro 2024 content management system for the Premier channel. The Laravel-based admin panel provides a user-friendly interface for editing and updating information, and also allows you to easily scale and expand the functionality of the site in the future"
 }

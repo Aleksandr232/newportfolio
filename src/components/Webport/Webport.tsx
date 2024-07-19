@@ -12,6 +12,7 @@ import newport from './newport.png';
 import arenda from './arendaVsoti.png';
 import ritual from './ritualcompass.png';
 import euro from './euro.png';
+import primer from './lending.png';
 
 export default function Webport(){
     const {t} = useTranslation()
@@ -25,6 +26,7 @@ export default function Webport(){
     const [modalActive7, setModalactive7] = useState(false)
     const [modalActive8, setModalactive8] = useState(false)
     const [modalActive9, setModalactive9] = useState(false)
+    const [modalActive10, setModalactive10] = useState(false)
 
     const clickModal=()=>{
         setModalactive(prev=>!prev)
@@ -63,6 +65,10 @@ export default function Webport(){
 
     const clickModal9=()=>{
         setModalactive9(prev=>!prev)
+    }
+
+    const clickModal10=()=>{
+        setModalactive10(prev=>!prev)
     }
 
     return(
@@ -411,6 +417,40 @@ export default function Webport(){
                                             </span>
                                             <div className="portfolio-btns">
                                                 <a href="https://premier-euro2024.ru/" className="btn" target="_blank">{t("btn_look")}</a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="img-card-container">
+                                    <div onClick={clickModal10} className="img-card">
+                                        <div className="overlay"></div>
+                                        <div className="info">
+                                            <h3>{t("primer")}</h3>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                            </span>
+                                        </div>
+                                        <img src={primer} style={{width:595}} alt=""/>
+                                    </div>
+                                    <div className={modalActive10 ? 'portfolio-model flex-center active' : 'portfolio-model'}>
+                                        <div onClick={clickModal10} className="portfolio-model-body">
+                                            <i className="fas fa-times portfolio-close-btn"></i>
+                                            <h3>{t("primer")}</h3>
+                                            <img src={primer} alt=""/>
+                                            <p>{t("primer_desc")}</p>
+                                            <span>
+                                                <img  style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+                                                <img style={{width:30}} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+                                            </span>
+                                            <div className="portfolio-btns">
+                                                <a href="https://doc.premier-opros.ru/1/" className="btn" target="_blank">{t("btn_look")}</a>  
                                             </div>
                                         </div>
                                     </div>
